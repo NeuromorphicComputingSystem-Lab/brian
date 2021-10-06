@@ -1,0 +1,55 @@
+# Long ones - sometimes want to include these, sometimes not
+COBAHH.py
+Izhikevich_2006_Polychronization.py
+STDP1.py
+STDP1_bis.py
+STDP2.py
+Fig5E_precision_reliability.py
+Fig4_duration_stdp.py
+
+# Short ones
+parallelpython.py
+parallelpythonised
+interface.py
+Izhikevich_2006_Polychronization_longer.py
+clusterexample_manager.py
+clusterexample_worker.py
+remotecontrolserver.py
+remotecontrolclient.py
+ircam_hrtf.py
+sound_localisation_model.py
+
+# These need additional files
+Goodman_Brette_2010.py
+threshold_analysis.py
+lp_compensation.py
+Fig12A_Goodman_Brette_2010.py
+Fig1C.py
+
+# Needs graphics
+realtime_plotting.py
+PierreYger.py
+Rossant_et_al_2011.py
+
+# Need pygame
+artificial_vowels.py
+sounds.py
+anonymous.py
+
+# Need playdoh
+offline_electrode_compensation.py
+modelfitting_groups.py
+modelfitting_machines.py
+modelfitting.py
+
+# Uses multiprocessing
+Muller_et_al_2011.py
+taskfarm.py
+multiple_runs_with_gui.py
+multiple_runs_simple.py
+
+# Have to run together, simply exclude for now
+Fig2A_synchrony_partition.py
+Fig2C_decoding_synchrony.py
+Fig11B_olfaction_stdp_learning.py
+Fig11B_olfaction_stdp_testing.py

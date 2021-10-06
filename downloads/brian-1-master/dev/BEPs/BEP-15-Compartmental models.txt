@@ -1,0 +1,274 @@
+BEP-15: Compartmental models
+
+Abstract: I describe a way to implement compartmental models in Brian.
+
+To model a neuron with a morphology, the standard approach is to divide the morphology in many
+isopotential compartments, with currents flowing through the membrane or through the two sides of
+the compartment. In the limit of infinitely many compartments, we obtain the cable equation.
+If there any many compartments with the same equations (but possibly different parameter values),
+then the same trick that applies for neuron groups applies for groups of compartments. The main difference
+is that there is only 1 output spike. There are several possible designs:
+* New NeuronGroup, indexes correspond to input synapses. In that case, each row of the state matrix
+would be a (spatially distributed) variable, while columns would correspond to different compartments. A function
+would map location ("LLR.15*um") to compartment index.
+* A NeuronGroup with a new StateUpdater and relevant methods. Maybe N should be 1.
+
+Description of a compartmental model
+====================================
+I feel that the notion of "compartment" should be mostly hidden because it is in fact an implementation detail
+much as the choice of the timestep. Most models can be described by:
+* currents that are spatially distributed (membrane currents)
+* point currents (synapses and soma)
+* morphology
+* a few global parameters (axial resistance, etc)
+* a threshold condition (and probably no reset), which is really a spike detection mechanism
+
+The Connection object needs to address variables by their spatial location, in a single string
+(although this might actually work with an object, with minor modifications to Connection and a few
+other places). It involves changing the method get_var_index(state) in NeuronGroup, where state would
+be for example "LLR.15*um.v" (branch left twice, branch right, advance 15 �m) or "LLR.end.v".
+In the same way, state monitors need to address by spatial location for distributed variables
+and also by name for point processes. Another possibility for names could be "v@LLR.15*um" or "v@mysynapse".
+Those names are translated into indexes.
+
+How to describe the spatial models? One possibility is to have a special term in the equation which would
+correspond to the longitudinal current. This way we keep the spirit of Brian. For example:
+eqs='''
+dv/dt=(gl*(El-v)+Icable)/C : volt
+'''
+The term Icable would then be replaced by the adequate value by the updater. This is very easy to implement
+internally, Icable just needs to be another variable. Alternatively, one could simply define the
+membrane current:
+eqs='''
+Im=gl*(El-v) : amp/cm**2
+'''
+This second option is better, I think.
+The NeuronGroup is then initialized with:
+* spatial model equations (above)
+* morphology (we need a new module here, maybe using the experimental one); the morphology is
+a binary tree, except perhaps at the soma (e.g. 1 axon + 2 dendritic trees)
+* global parameters
+* point currents (possibly later), which could actually be non-spiking NeuronGroups.
+* maybe somatic equations, possibly as point currents
+* optionally, threshold condition
+
+One point we may want to think about is calcium dynamics: we should check whether
+it can be incorporated in the same framework (Ca dynamics follows a sort of
+cable equation).
+
+Data structure
+==============
+I can imagine that there are at least two matrices:
+* One for spatially distributed variables, each row of the state matrix
+would be a (spatially distributed) variable, while columns would correspond to different compartments. A function
+would map location ("LLR.15*um") to compartment index. This would be the standard state matrix.
+* One or several for point processes, each row is a variable, columns index processes. Each such block could
+actually be handled as a NeuronGroup (with spike input, possibly a Connection structure).
+
+One also needs to find a simple way to set the distributed parameters, which could be the following:
+neuron["LLR.15*um":"LLR.30*um"] would create a subgroup that corresponds to a branch of the neuron. Internally,
+it is essentially a view on the relevant compartments. Then one could write things like
+  branch=neuron["LLR.15*um":"LLR.30*um"]
+  branch.gl=2*branch.gK
+where the latter is a vector operation. Morphological parameters would be available as variables
+(e.g. branch.diameter, branch.surface). The location of the compartment in the branch should also be indicated (branch.x),
+but we have to decide whether it should be the relative or absolute location.
+It could also be interesting if the branch was iterable:
+for compartment in branch:
+	compartment.gl=2*compartment.gK # this is in surfacic units
+
+Point processes
+===============
+Synapses and electrodes are point processes, that is, not spatially distributed.
+It makes sense to group synapses of the same type into a NeuronGroup. Thus, the neuron
+stores a list of NeuronGroups for point processes, together with the indexes of compartments
+where these point processes are inserted. The syntax could be as follows:
+
+electrode="Iinj : amp"
+neuron.dendrites.LR[5*um].insert(model=electrode,current="Iinj")
+
+But this implies that the method checks whether there is already a group of processes
+with the same model. Maybe dictionaries of models as strings and as
+Equation objects. The problem is that we won't be able to use NeuronGroups at construction
+time, which will cause some problems. Alternatively, we could have a state matrix
+implemented as a dynamic array, or have it predeclared:
+
+P=neuron.point_process(model=synapse,current="Iinj",N=10)
+neuron.dendrites.LR[5*um].insert(P)
+
+Internally, the model could be a Current (it could be passed as a string or Current object).
+
+New attributes are created: neuron.Iinj is a vector with the value of Iinj for all
+point processes. This is done by overriding the getattr/setattr methods and directing them
+to the neuron groups that store the point processes.
+
+Monitoring
+==========
+Special monitors need to be added to monitor distributed variables.
+Without modification, the following should work, through the subgrouping mechanism:
+M=StateMonitor(neuron.axon[50*um:100*um],'v',record=True)
+
+It could be nice to have this syntax:
+M=StateMonitor(neuron.axon,'v',record=[50*um:100*um])
+
+and access recorded values in a similar way, e.g. M[60*um].
+
+State update
+============
+1) Update point processes, as NeuronGroups
+2) Update the spatial equation (e.g. using Hines method)
+3) Add point currents
+
+The state update for the cable equation can be done with Hines method:
+Int J Biomed Comput. 1984 Jan-Feb;15(1):69-76.
+Efficient computation of branched nerve equations.
+Hines M.
+Available on Neuron's website:
+http://www.neuron.yale.edu/neuron/nrnpubs
+
+Another method here:
+http://www.jstor.org/stable/pdfplus/2157690.pdf
+The Backward Euler Method for Numerical Solution of the Hodgkin-Huxley Equations of
+Nerve Conduction.
+Mascagni M. 1990
+
+And:
+Digital computer solutions for excitation and propagation of the nerve impulse.
+Cooley & Dodge 1966
+
+In Hines method, values of ionic currents are calculated at
+midpoints of time steps as a function of V(t), and the
+values of the conductances are considered as constant within
+a timestep for the integration of the cable equation.
+The cable equation uses a simple implicit scheme followed by
+an explicit step. As I understand it, the update of Im (IHH in
+the paper) and the integration of the cable equation are completely
+independent. Therefore, we can have separate stateupdaters which are
+called in the following order:
+1) Update the spatial equation with Hines method.
+2) Update the membrane current with a standard vectorized updater (2nd order?).
+3) Update the point processes with a standard vectorized updater.
+(actually I think 2 should be before 1, but it won't make a difference)
+
+Mascagni's method is backward Euler, with the advantage that convergence is
+guaranteed. The algorithm is as follows:
+1) Solve the discrete system for V(t+dt), where the other variables are constant
+and assumed to be known at time t+dt (first iteration: use value at t). This
+is sparse linear system (could be computed with scipy.sparse.linalg?).
+2) Solve for the other variables at t+dt using a backward Euler step with the
+values of V from step 1. In principle this is a simple 1D linear system
+(assuming conditional linearity for these variables).
+3) Repeat until convergence (how many times?).
+
+In comparison, Hines method uses a single iteration, which is solving a sparse
+linear system as well (in fact the same one, but at time t+dt/2).
+1) Calculate other variables at t+dt/2, by an Euler step from time t-dt/2,
+that uses the values at time t for V, and estimated at time t for the other
+variables using the average between t-dt/2 and t+dt/2 (this makes it implicit).
+2) Solve for V(t+dt/2) then do a forward step to t+dt.
+This looks to me like one step of the backward Euler method (except it's 2 then
+1).
+There is pseudo-code in Hines paper.
+
+Both methods rely on the conditional linearity of the equations, therefore it
+cannot work for all types of models (e.g. exponential model).
+
+To deal with branches, there are two options:
+1) Use Hines method.
+2) Use domain decomposition. This means using the linearity of the problem
+(it is linear once the other variables considered fixed, by conditional linearity)
+to solve the equation separately on each branch and then combine them linearly.
+The big advantage is that this way we can still use the solve_banded method of
+scipy.
+
+Neuron groups
+=============
+How to describe neuron groups with morphologies? Two options:
+* neurons have the same morphology
+* neurons have different morphologies, but the same models
+It seems to me that option 2 is possible.
+However the threshold mechanism must be changed.
+It might also be possible to have gap junctions with this scheme.
+
+Building the morphology
+=======================
+See experimental.morphology2. This should be a separate class, created before
+the neuron is initialised.
+
+mymorph=Morphology('pyramidalL5.swc')
+mymorph=Morphology() # Creates a soma (1 compartment) or Soma()
+mymorph.dendrites=Cylinder(l=100*um,d=2*um,n=20) # Inserts cylinder at soma, 20 compartments, subtree name "dendrites"
+mymorph.dendrites.diameter=linspace(1*um,2*um,len(mymorph.dendrites))
+for compartment in mymorph.dendrites: # maybe not very useful
+    compartment.diameter=...
+mymorph.dendrites.L=Cylinder(l=50*um,d=1*um,n=10) # Creates a child branch
+mymorph.dendrites.R=Cylinder(l=50*um,d=1*um,n=10) # Creates another child branch
+mymorph.dendrites.LL=Cylinder(l=50*um,d=1*um,n=10) # A short hand for L.L
+
+Data structure
+--------------
+A neuron morphology is a tree of branches, and each branch is a list of segments.
+The root is the soma.
+Each segment has a diameter and length (except perhaps the soma).
+The children can be named, but there are two special names "L" and "R" (left/right),
+which allows concise access using binary strings of the form LLR
+(left left right).
+Additional information (which is in swc files) could be stored, e.g. 3D coordinates.
+
+The data structure is a tree of branches. Each branch has the following attributes:
+* diameter, length, area, x, y, z for all compartments (vectors)
+* number of compartments (could be implicit in vector length)
+* A dictionary of children, and possibly the parent.
+
+Subgrouping
+-----------
+Ex: subtree=mymorph.dendrites.LLR
+mymorph.dendrites returns a subtree, mymorph.dendrites.LLR too but it's a shorthand
+for L.L.R. Internally, it does mymorph.dendrites.L.LR (recursive algorithm).
+
+subtree=mymorph.dendrites[1131]
+If it's not a binary tree, then we need to access children with numbers, this can be
+done with setitem.
+
+Insertion
+---------
+Ex: mymorph.dendrites.L=Cylinder(l=50*um,d=1*um,n=10) # or Branch?
+Ex2: mymorph.dendrites.LLR=Cylinder(l=50*um,d=1*um,n=10)
+using setattr. The instruction replaces or creates the subtree (child) with the given morphology.
+LLR is shorthand for L.L.R (recursive algorithm as for subgrouping).
+
+Examples
+========
+mymorph=Morphology('pyramidalL5.swc')
+eqs=''' # The same equations for the whole neuron, but possibly different parameter values
+Im=gl*(El-v)+gNa*m**3*h*(ENa-v) : amp/cm**2 # distributed transmembrane current
+gNa : siemens/cm**2 # spatially distributed conductance
+dm/dt=(minf-m)/tauinf : 1
+# etc
+'''
+neuron=CompartmentalNeuron(model=eqs,morphology=mymorph,threshold="axon[50*um].v>0*mV",reset=None,refractory=4*ms,
+                           cm=0.9*uF/cm**2,Ri=150*ohm/cm) # or SpatialNeuron
+# Note: the threshold and reset have to be handled differently, as if N=1
+initial_segment=neuron["axon.0*um":"axon.100*um"]
+# initial_segment=neuron.axon[0*um:100*um]
+initial_segment.gNa=linspace(0*nS/cm**2,3000*nS/cm**2,len(initial_segment))
+initial_segment.cm=1*uF/cm**2 # We change the default specific capacitance (useful e.g. if myelinated)
+
+# Point processes
+exc_synapse="""
+Ie=ge*(Ee-v) : amp
+dge/dt=-ge : siemens
+"""
+neuron.dendrites.LLR[10*um].insert_current(model=exc_synapse,current="Ie")
+# neuron.dendrites is a subgroup; also neuron.dendrites.LLR (or perhaps .L.L.R ?)
+# other method names: insert, point_process
+
+electrode="Iinj : amp"
+neuron.dendrites.LR[5*um].insert_current(model=electrode,current="Iinj")
+
+M=StateMonitor(neuron.axon,'v',record=[50*um:100*um]) # maybe a special monitor? SpatialStateMonitor
+# record can be True (entire tree), 50*um, [50*um:100*um] or [:] (entire branch)
+
+@network_operation
+def inject_random_current():
+    neuron.dendrites.LR[5*um].Iinj=rand()*nA

@@ -1,0 +1,101 @@
+Brian Development plan
+----------------------
+
+How about we launch a survey? We can easily create a web form with google, and
+have questions about what users would like to see in next versions. 
+
+Meeting notes:
+
+* First thing: complete GPUNeuronGroup, using threshold/reset in model fitting
+  (B/C) + Issam's compaction algorithms.
+	-> October
+* Brian Hears: remove all transfers.
+	-> start a BEP
+
+[R]* Analyse weblogs on documentation's website
+I uploaded brian_docs_analysis.txt with this information.
+
+* Examples for our papers
+[R]* BEP on event-driven STDP / nonlinear synapses + examples
+
+* Survey on comp-neuro + at installation time + analysis of user's code
+-> October
+This is in a google form (check in your google docs to edit it):
+https://spreadsheets.google.com/spreadsheet/viewform?formkey=dEVlaTVFczBDS1FtZW5wYXl3cmFpVFE6MQ
+
+* Test new model fitting
+
+* Version 1.4 (October):
+	* MultiLinear...
+	* New model fitting
+	* Refractoriness
+	* Metrics
+	* New SpikeGeneratorGroup
+
+1) GPU
+------
+[BDV]* Start with Brian Hears. Essentially, GPU kernels are done but we need
+to remove all GPU<->CPU transfers. Ideally, we would just transfer spikes
+(and so it would be good if neuron groups can include noise/Poisson firing).
+
+[BCD]* For Brian: maybe have a first version that is not entirely transparent to
+the user?
+	* First a non-transparent version. Possibly several objects for GPU and CPU.
+	* Example scripts: CUBA (simple), barrel cortex (complex - Kremer_et_al_2011)
+	* Specific objects on GPU (GPUNeuronGroup, GPUConnection, etc)
+		** Thresholding in GPUNeuronGroup ** (compaction) + threshold/reset
+		* GPUConnection
+
+[VDR]2) Synapses:
+------------
+Currently missing:
+* nonlinear synapses (NMDA)
+	-> using fake NeuronGroup as a proxy to synaptic weights + state updater
+	issue: several synaptic variables
+	using a slower clocks?
+	(then we can define differential equations on synaptic weights)
+
+* probabilistic synapses - implications for STP/STDP
+	-> complicated! (is it very useful?)
+* multiple synapses (with different delays) between the same pre/post neurons
+	-> think of nice syntax
+	
+* STDP: access to postsynaptic variables
+* STDP: rules with local synaptic variables
+	-> event queues?
+	-> example from STDP1/2
+
+First, we should at least provide a way, even not clean and elegant, to implement
+these things. Then essentially what will be needed is: 1) local synaptic variables
+(distinct from weights), 2) event-driven synaptic dynamics (taking delays into
+account).
+
+3) Miscellaneous
+----------------
+[V]* Victor's spatialiser -> Brian Hears
+	-> check final_examples
+[D]* Refractoriness
+	-> examples (syntax)
+	-> BEP
+[C]* Cyrille's new LinearStateUpdater code
+	-> test
+* Stochastic DE integrators
+* Compound integrators (linear/nonlinear parts)
+[D]* Multilinear state updater (new syntax for Equations)
+	-> syntax: (constant)
+[D]* Code generation
+* Cluster simulations
+	-> ask Eilif
+	-> quick multicore test (CUBA?) to check if it's worth it
+[B]* Cable equations (a lot is done, but we need to implement the integration method)
+	-> try a HH axon (just Numpy)
+[B]* Metrics in analysis (Bertrand)
+	-> talk about syntax
+* New SpikeGeneratorGroup
+
+4) Examples and docs
+--------------------
+* More examples from our papers.
+* Examples from papers should also be posted in modeldb.
+* Examples using Playdoh.
+* Electrode compensation example.

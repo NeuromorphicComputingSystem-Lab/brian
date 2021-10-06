@@ -1,0 +1,30 @@
+TODO
+----
+1) Maybe: first test with cylinders in Neuron, check access resistance and all.
+	- Cylinder = fine
+	- Tapered cylinder = almost fine (slight difference at the start, maybe different boundary condition?)
+1b) Remy's stuff: does *not* work (maybe the gpu version?)
+1c) Write it myself, use Remy's examples to check.
+	- Works for 1 branch.
+	- Impulse response works for sequence of branches.
+	- Ball and stick works! (same as Neuron).
+	- Hack for soma works.
+	- Several branches: seems to work.
+	(- Then add soma more cleanly.)
+2) Check with active currents.
+	- HH on cylinder, matches nicely.
+	- HH on soma+axon+dendrite works.
+
+* Threshold, reset and refractoriness: threshold should be able to return a
+  single boolean, in this case reset should be given the full index array.
+
+* Cm should be (optionally) a distributed variable (for myeline). It could be done simply by a check
+that Cm is in the equations (if Cm=None, then we use the distributed variable).
+* Write examples, including point processes
+* Think about point processes. Use the Synapses object?
+* Morphology: adding morphologies (at least cylinders)?
+* One thing is missing in the Morphology: the position of the current branch in the
+  big matrix (Note: all other variables, length etc, are views on the big matrix,
+  for the current branch).
+ * GPU
+ 

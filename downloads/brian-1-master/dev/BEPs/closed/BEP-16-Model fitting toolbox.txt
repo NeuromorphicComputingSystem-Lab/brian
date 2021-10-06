@@ -1,0 +1,34 @@
+BEP-16: Model fitting toolbox
+
+Abstract:
+    This toolbox allows to fit a neuron model to data : give a data set (a set of experimentally-recorded 
+    spike trains from a single neuron), give a neuron model with free parameters, and the toolbox 
+    finds the best fitting model parameters.
+
+Code Example
+============
+from brian.library.modelfitting import *
+
+data = [(i,t),...,(j,s)] # experimental spike trains with N neurons
+params, value=modelfitting(model="dv/dt=-v/tau : volt", reset=0*mV, threshold=10*mV,
+                  		   data=data,
+                           input=I, # a vector or a matrix or a list of vectors
+					       tau=(0*ms,5*ms,10*ms,30*ms),     # (min,init_min,init_max,max)
+					       C=(0*pF,1*pF,2*pF,inf),
+					       verbose=False # display information
+                           )
+
+Notes
+=====
+- If an initial value is set ('init'), the fitting procedure will start from initial parameters values 
+  sampled from a normal distribution centered on that value. The standard deviation may be specified,
+  for example : init = init * (1+sigma*randn(N)), with a fixed default sigma (.3 or ?).
+- If an initial interval is set ('init_min' and 'init_max'), the fitting procedure will start from 
+  initial parameters values sampled from an uniform distribution within that interval.
+
+An user-defined fitness function may be defined with an optional argument to the constructor.
+
+The fitting procedure returns :
+- 'best_parameters' contains the best parameters found as a Parameters object
+(Parameters(tau=array([.012, .009, ..., .015]),...)
+- 'best_value' contains the best fitness value (the gamma factor by default)

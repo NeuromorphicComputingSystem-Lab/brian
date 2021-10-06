@@ -1,0 +1,69 @@
+BEP-10: Error handling
+
+Abstract: Errors raised by Brian scripts are often hard to understand because
+the error is typically raised in a subroutine of a Brian module that the user
+doesn't know about. The idea would be to have clearer error messages and error
+catching mechanisms that would relate the error and its context to the Brian
+script.
+
+I am just listing a few ideas here.
+
+Defining a new exception BrianError and subclasses
+==================================================
+For example, we could imagine that each major class would have
+its exception type, and the exception would be called with
+the instance of the class (self) and other runtime information.
+
+A separate module could gather a number of functions to make the
+message nicer and to do some introspection into the traceback,
+the frames and the user script (using the get_source function from the
+inspect module).
+These could be methods of a base Exception class BrianError.
+
+[Dan adds: agreed, seems like a good idea.]
+
+Nested exceptions
+=================
+In many cases, the function that raises the exception does not know
+the context, such as the user-defined differential equations, etc.
+One could imagine to use a specific exception to pass information
+to the calling function, e.g.:
+
+def a_specific_method(self):
+	...
+	raise SpecificException(self,other_information)
+	
+def global_function():
+	try:
+		eqs.a_specific_method()
+	except SpecificException as e:
+		useful_info=e.other_information
+		raise WhatEverError("I got one!",useful_info)
+		# or WhatEverError(e,...)
+
+[Dan adds: we had this in the past, or something very similar, and
+it didn't work very well, it basically made it more difficult to
+understand what was going on. We should have something like this,
+but only in those cases where an explicit error catching mechanism
+fails I think. Rather than improve the error reporting (which is
+what this tries to do), it would be much better to improve Brian's
+code so that it understands errors and deals with them more
+appropriately. At the moment we basically just hope there won't be
+any...
+Romain: yes I didn't mean something like the bug handler,
+"global-function" here does not embed the simulation, it could just be
+any method. There is at least one example currently where the
+units mismatch error is caught by the Equations object which
+changes it into a message about the differential equations
+being non-homogeneous]
+
+Real cases
+==========
+We should list here a number of real cases that we would like to handle.
+
+1.
+   times  = property(fget=lambda self:QuantityArray(self._times))
+   AttributeError: 'StateMonitor' object has no attribute '_times'
+
+Most likely: the statemonitor was initialised without setting the
+record keyword.

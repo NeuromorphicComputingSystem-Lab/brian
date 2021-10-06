@@ -1,0 +1,233 @@
+Creating a new release of Brian
+===============================
+
+Many of these steps can be done now using the Jenkins Continuous Integration
+server (hal.dec.ens.fr:8080) -- for completeness both ways (using Jenkins vs.
+doing it manually) are illustrated under the different subheadings. Note that
+you only have to do one of them!
+
+You need the following packages installed:
+
+* Sphinx version 0.6+
+* latex (if building PDF documentation)
+  
+Regression testing
+------------------
+
+Using Jenkins
+~~~~~~~~~~~~~
+This should be done automatically:
+The tests are run after every commit, the examples are tested nightly. But it
+certainly does not hurt to do it manually as well:
+
+Manually
+~~~~~~~~
+Run dev/tests/alltests.py and if possible dev/tests/allexamples.py. Note
+that some of the allexamples.py tests will fail for known reasons (check
+individual files to make sure).
+
+Update the version number
+-------------------------
+(Has to be done manually)
+
+Run dev/tools/newrelease/setversion.py, which will prompt you to type
+the new version number. We use the convention:
+
+major.minor.patch[a|b|rc1|rc2|etc.]
+
+where minor introduces significant new features and patch only introduces
+minor features or fixes bugs.
+
+Update README.txt and brian/new_features.txt
+--------------------------------------------
+(Has to be done manually)
+Copy the latest new features from new_features.txt into README.txt
+following the convention there, and make a new section in new_features.txt
+for the next version. You should also go through the commit log from the time
+of the last release, to check for features that people have forgotten to add to
+new_features.txt. This is also a good way to find things that should be but
+aren't documented, etc.
+
+Also, you might want to update README.txt as well if there are significant
+changes such as new web page, new authors, new requirements, etc.
+
+Build the documentation
+-----------------------
+
+This probably doesn't need to be done for patch level releases, only
+minor and major releases.
+
+Using Jenkins
+~~~~~~~~~~~~~
+Select "Build Now" for the "Documentation" job. After the job has finished 
+successfully, it should provide a file `docs.zip` containing the HTML and PDF
+documentation, this should be uploaded as the docs folder to the website.
+
+Note that Jenkins does currently not have access to the "More Brian" SVN
+therefore it can't be used to make a new BrianReference.pdf.
+
+Manually
+~~~~~~~~
+First of all, run the dev/tools/docs/generate_html.py script. This will
+generate all the relevant HTML files for the documentation other
+than the API documentation. Note that you need to check that no errors are
+raised, and fix them if they are.
+
+Secondly, build the PDF version of the documentation by running
+dev/tools/docs/build_latex.py. Copy the file
+docs_sphinx/_latexbuild/Brian.pdf to docs.
+
+Finally, if necessary make a new BrianReference.pdf from the doc file on
+the "More Brian" SVN.
+
+The docs folder should be copied to the website.
+
+Update setup.py
+---------------
+(Has to be done manually)
+The setup.py file is the install script for Brian and also contains
+the information that defines what people see on the pypi site, and
+what the requirements are for easy_install and so forth, so it's
+important to get the information right.
+
+Extras folders:
+	The extras_folders variable specifies which files are included
+	in the extras zip file, this doesn't usually need updating
+	unless there has been a change in structure of Brian (the
+	most likely being new examples subdirectories).
+py_modules:
+	Lists the extra modules not part of the main Brian package,
+	most likely this doesn't need to be changed.
+packages:
+	Lists the subpackages inside Brian, every package within a
+	package needs to be listed explicitly so this may have changed.
+requires:
+	The minimum versions of various packages to make Brian work.
+url, description, long_description, author, author_email, download_url:
+	Most likely these won't change much, but when we change the web site
+	or our email addresses for example, these might change.
+classifiers:
+	Most likely these won't change either, there are standard names for
+	these which you can look up on the PyPI site. 
+
+You can use the track_files.py script to help with this. It tracks all the
+files in the Brian distribution and asks you whether or not you want to
+include them in the release or extras files. See the docstring for more info.
+If there are files which should be included but aren't, you need to change
+the setup.py file.
+
+Create the distribution files
+-----------------------------
+
+Using Jenkins
+~~~~~~~~~~~~~
+Select "Build now" for the "Release" Job -- after it finished it should provide
+the .zip, .tar.gz and .exe files. Note that any changes to the MANIFEST.in
+files (see below) have to be done manually before running the job.
+
+Manually
+~~~~~~~~
+First if you have a copy, delete the MANIFEST file. Next, if necessary,
+update the MANIFEST.in file which specifies which files should be
+included in the distribution. At the moment, we have an inclusive
+rule, include all Python and SWIG files.
+
+Now run the dev/tools/create_dist.py file which should have create
+three files brian-versionname.win32.exe,
+brian-versionname.tar.gz and brian-versionname.zip in the dist
+directory. Check (in the ZIP version for example) that all the files
+you expect to be there are there.
+
+You can now delete old versions (they're still available
+on the SVN, but don't take up unnecessary space).
+
+Create the extras file
+----------------------
+
+Using Jenkins
+~~~~~~~~~~~~~
+Select "Build now" for the "Extras" jobs.
+
+Manually
+~~~~~~~~
+Just run the create_extras.py file. This should create
+dist/brian-versionname-extras.zip.
+
+Test the distribution
+---------------------
+(Has to be done manually)
+
+First uninstall any installed copy of Brian you have on your machine,
+but not the SVN version. Do this by going to Add/Remove programs in
+Windows settings, and looking for 'Python 2.5 brian' and removing it.
+
+Now install Brian using the Windows installer. Open IPython, type::
+
+	from brian import *
+	run_all_tests()
+
+Note the directory it is running from (this should be in the Python
+site-packages directory, not the SVN location).
+
+Once you've verified that it all works, you can uninstall the installed
+version of Brian (which is used in preference to the SVN version).
+
+Upload to Trac
+--------------
+
+Go to our Trac page:
+
+	https://neuralensemble.org/trac/brian/wiki
+	
+Login, go to Admin, click on Downloader. Create a new release under
+Official Releases with the version number as the name of the release.
+Make sure the order is right (look at the most recent one and subtract 1). Select
+the release and upload each file as in the examples already there. Make sure
+to edit the Download page on the Trac Wiki to point to the new release.
+
+Upload to PyPI
+--------------
+Using Jenkins
+~~~~~~~~~~~~~
+Select "Build now" for the "PyPI upload" job and enter the username and
+password for you PyPI account.
+
+Manually
+~~~~~~~~
+You use the dev/tools/newrelease/register_pypi.py script to register
+the data on PyPI. Note that you need a PyPI account that is authorised
+to make changes to Brian. Also note that you need a file .pypirc in
+your home directory which should be be a text file like:
+
+	[server-login]
+	username:...
+	password:...
+
+The HOME environment variable must be set to point
+to your home directory (which is not standard in Windows). Due to a
+bug in distutils, on Windows this HOME environment variable cannot have
+any spaces in it, so use the old 8.3 filename, e.g. on my laptop at
+home it is C:\DOCUME~1\DANGOO~1.
+
+Commit to SVN
+-------------
+(Has to be done manually)
+
+At this point, make a commit to the SVN with a large notice in the commit
+comment such as ****** BRIAN 1.2.0 ******. Also, create an SVN tag with this
+release (svn copy /trunk to /tags/1.2.0 for example).
+
+Set the version to the next planned release
+-------------------------------------------
+(Has to be done manually)
+
+Run setversion.py and enter the next planned version with 'dev' on the
+end, e.g. 1.1.4dev. This is so that weekly releases will be marked as
+dev versions for support.
+
+Announce the release
+--------------------
+
+Announce on the web page and the brian support mailing list.
+
+Also, update the version number in the wikipedia entry for Brian!

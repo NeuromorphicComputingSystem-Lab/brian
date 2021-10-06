@@ -1,0 +1,42 @@
+GPU week - Debriefing
+=====================
+
+What we have now:
+* a NemoConnection that can run a (non plastic) DelayConnection on Nemo (except modulation).
+* a synfire chain example with heterogeneous delays for tests.
+
+What we would like to have:
+* the Synapses class on GPU
+	This requires 1) backward spike delivery, 2) execution of user code on multiple synaptic variables.
+* a complete NeuronGroup on GPU (with threshold)
+	For this we can reuse some of Nemo's code.
+
+* Automatic synapse indexing: see the corresponding document. This would be needed to optimize
+global memory transfers for both the forward and backward spike propagation (for STDP)
+	> Andrius/Cyrille
+	(if it's worth it perhaps we could think of a GPU algorithm?)
+
+* How to directly construct networks on GPU (could be important in some cases)
+
+NeuronGroup on GPU
+------------------
+* Threshold/compaction
+* New refractory system
+* Stochastic equations
+* Poisson groups
+
+Synapses
+--------
+* Finish the Synapses class (Python)
+	> Romain
+* Running multiple connections: run multiple Nemo networks and share neuron variables
+* Backward propagation
+* Code generation, use Pycuda to run kernels (for pre/post code in Synapses)
+* Optimal synapse indexing for forward and backpropagation of spikes
+	> Andrius/Cyrille
+
+Other things
+------------
+* Brian Hears
+* Check other algorithms in the literature (especially for STDP) (e.g. Jayram's)
+* We have Issam's code the di svn (Brian/Issam_BrianToCuda)
