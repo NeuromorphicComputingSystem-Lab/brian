@@ -14,7 +14,6 @@ from   struct import unpack
 import os
 import sys
 import getopt
-import matplotlib.pyplot as plt
 
 #------------------------------------------------------------------------------
 # Specify the location of the input dataset
@@ -489,7 +488,7 @@ delay['ei_input']      = (0*b.ms,5*b.ms)
 #------------------------------------------------------------------------------
 # Create the neuron groups
 #------------------------------------------------------------------------------
-plt.ion()
+b.ion()
 fig_num        = 1
 neuron_groups  = {}
 input_groups   = {}
@@ -564,7 +563,7 @@ for name in population_names:  # population_names: A
 if record_spikes:
    b.figure(fig_num)
    fig_num += 1
-   plt.ion()
+   b.ion()
    b.subplot(211)
    b.raster_plot(spike_monitors['Ae'], refresh=1000*b.ms, showlast=1000*b.ms)
    b.subplot(212)
@@ -573,7 +572,7 @@ if record_spikes:
 if record_state:
    b.figure(fig_num)
    fig_num += 1
-   plt.ion()
+   b.ion()
    b.subplot(211)
    Ipost_monitors['e'].plot(refresh=1000*b.ms, showlast=1000*b.ms)
    b.subplot(212)
