@@ -1,0 +1,1660 @@
+ubuntu@ubuntu-virtual-machine:/usr/bin$ dpkg -l
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name           Version      Architecture Description
++++-==============-============-============-=================================
+ii  accountsservic 0.6.45-1ubun amd64        query and manipulate user account
+ii  acl            2.2.52-3buil amd64        Access control list utilities
+ii  acpi-support   0.142        amd64        scripts for handling many ACPI ev
+ii  acpid          1:2.0.28-1ub amd64        Advanced Configuration and Power 
+ii  adduser        3.116ubuntu1 all          add and remove users and groups
+ii  adium-theme-ub 0.3.4-0ubunt all          Adium message style for Ubuntu
+ii  adwaita-icon-t 3.28.0-1ubun all          default icon theme of GNOME (smal
+ii  aisleriot      1:3.22.5-1   amd64        GNOME solitaire card game collect
+ii  alsa-base      1.0.25+dfsg- all          ALSA driver configuration files
+ii  alsa-utils     1.1.3-1ubunt amd64        Utilities for configuring and usi
+ii  amd64-microcod 3.20191021.1 amd64        Processor microcode firmware for 
+ii  anacron        2.3-24       amd64        cron-like program that doesn't go
+ii  apg            2.2.3.dfsg.1 amd64        Automated Password Generator - St
+ii  app-install-da 16.04        all          Application Installer (data files
+ii  apparmor       2.12-4ubuntu amd64        user-space parser utility for App
+ii  apport         2.20.9-0ubun all          automatically generate crash repo
+ii  apport-gtk     2.20.9-0ubun all          GTK+ frontend for the apport cras
+ii  apport-symptom 0.20         all          symptom scripts for apport
+ii  appstream      0.12.0-3ubun amd64        Software component metadata manag
+ii  apt            1.6.12ubuntu amd64        commandline package manager
+ii  apt-config-ico 0.12.0-3ubun all          APT configuration snippet to enab
+ii  apt-utils      1.6.12ubuntu amd64        package management related utilit
+ii  aptdaemon      1.1.1+bzr982 all          transaction based package managem
+ii  aptdaemon-data 1.1.1+bzr982 all          data files for clients
+ii  apturl         0.5.2ubuntu1 amd64        install packages using the apt pr
+ii  apturl-common  0.5.2ubuntu1 amd64        install packages using the apt pr
+ii  aspell         0.60.7~20110 amd64        GNU Aspell spell-checker
+ii  aspell-en      2017.08.24-0 all          English dictionary for GNU Aspell
+ii  at-spi2-core   2.28.0-1     amd64        Assistive Technology Service Prov
+ii  avahi-autoipd  0.7-3.1ubunt amd64        Avahi IPv4LL network address conf
+ii  avahi-daemon   0.7-3.1ubunt amd64        Avahi mDNS/DNS-SD daemon
+ii  avahi-utils    0.7-3.1ubunt amd64        Avahi browsing, publishing and di
+ii  baobab         3.28.0-1     amd64        GNOME disk usage analyzer
+ii  base-files     10.1ubuntu2. amd64        Debian base system miscellaneous 
+ii  base-passwd    3.5.44       amd64        Debian base system master passwor
+ii  bash           4.4.18-2ubun amd64        GNU Bourne Again SHell
+ii  bash-completio 1:2.8-1ubunt all          programmable completion for the b
+ii  bc             1.07.1-2     amd64        GNU bc arbitrary precision calcul
+ii  bind9-host     1:9.11.3+dfs amd64        DNS lookup utility (deprecated)
+ii  binutils       2.30-21ubunt amd64        GNU assembler, linker and binary 
+ii  binutils-commo 2.30-21ubunt amd64        Common files for the GNU assemble
+ii  binutils-x86-6 2.30-21ubunt amd64        GNU binary utilities, for x86-64-
+ii  blt            2.5.3+dfsg-4 amd64        graphics extension library for Tc
+ii  bluez          5.48-0ubuntu amd64        Bluetooth tools and daemons
+ii  bluez-cups     5.48-0ubuntu amd64        Bluetooth printer driver for CUPS
+ii  bluez-obexd    5.48-0ubuntu amd64        bluez obex daemon
+ii  bolt           0.5-0ubuntu0 amd64        system daemon to manage thunderbo
+ii  branding-ubunt 0.10         all          Replacement artwork with Ubuntu b
+ii  brltty         5.5-4ubuntu2 amd64        Access software for a blind perso
+ii  bsdmainutils   11.1.2ubuntu amd64        collection of more utilities from
+ii  bsdutils       1:2.31.1-0.4 amd64        basic utilities from 4.4BSD-Lite
+ii  bubblewrap     0.2.1-1ubunt amd64        setuid wrapper for unprivileged c
+ii  build-essentia 12.4ubuntu1  amd64        Informational list of build-essen
+ii  busybox-initra 1:1.27.2-2ub amd64        Standalone shell setup for initra
+ii  busybox-static 1:1.27.2-2ub amd64        Standalone rescue shell with tons
+ii  bzip2          1.0.6-8.1ubu amd64        high-quality block-sorting file c
+ii  ca-certificate 20210119~18. all          Common CA certificates
+ii  cheese         3.28.0-1ubun amd64        tool to take pictures and videos 
+ii  cheese-common  3.28.0-1ubun all          Common files for the Cheese tool 
+ii  colord         1.3.3-2build amd64        system service to manage device c
+ii  colord-data    1.3.3-2build all          system service to manage device c
+ii  command-not-fo 18.04.5      all          Suggest installation of packages 
+ii  command-not-fo 18.04.5      amd64        Set of data files for command-not
+ii  console-setup  1.178ubuntu2 all          console font and keymap setup pro
+ii  console-setup- 1.178ubuntu2 all          Linux specific part of console-se
+ii  coreutils      8.28-1ubuntu amd64        GNU core utilities
+ii  cpio           2.12+dfsg-6u amd64        GNU cpio -- a program to manage a
+ii  cpp            4:7.4.0-1ubu amd64        GNU C preprocessor (cpp)
+ii  cpp-7          7.5.0-3ubunt amd64        GNU C preprocessor
+ii  cracklib-runti 2.9.2-5build amd64        runtime support for password chec
+ii  crda           3.18-1build1 amd64        wireless Central Regulatory Domai
+ii  cron           3.0pl1-128.1 amd64        process scheduling daemon
+ii  cups           2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  cups-browsed   1.20.2-0ubun amd64        OpenPrinting CUPS Filters - cups-
+ii  cups-bsd       2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  cups-client    2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  cups-common    2.2.7-1ubunt all          Common UNIX Printing System(tm) -
+ii  cups-core-driv 2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  cups-daemon    2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  cups-filters   1.20.2-0ubun amd64        OpenPrinting CUPS Filters - Main 
+ii  cups-filters-c 1.20.2-0ubun amd64        OpenPrinting CUPS Filters - Drive
+ii  cups-ipp-utils 2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  cups-pk-helper 0.2.6-1ubunt amd64        PolicyKit helper to configure cup
+ii  cups-ppdc      2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  cups-server-co 2.2.7-1ubunt all          Common UNIX Printing System(tm) -
+ii  dash           0.5.8-2.10   amd64        POSIX-compliant shell
+ii  dbus           1.12.2-1ubun amd64        simple interprocess messaging sys
+ii  dbus-user-sess 1.12.2-1ubun amd64        simple interprocess messaging sys
+ii  dbus-x11       1.12.2-1ubun amd64        simple interprocess messaging sys
+ii  dc             1.07.1-2     amd64        GNU dc arbitrary precision revers
+ii  dconf-cli      0.26.0-2ubun amd64        simple configuration storage syst
+ii  dconf-gsetting 0.26.0-2ubun amd64        simple configuration storage syst
+ii  dconf-service  0.26.0-2ubun amd64        simple configuration storage syst
+ii  debconf        1.5.66ubuntu all          Debian configuration management s
+ii  debconf-i18n   1.5.66ubuntu all          full internationalization support
+ii  debianutils    4.8.4        amd64        Miscellaneous utilities specific 
+ii  deja-dup       37.1-2fakesy amd64        Backup utility
+ii  desktop-file-u 0.23-1ubuntu amd64        Utilities for .desktop files
+ii  dictionaries-c 1.27.2       all          spelling dictionaries - common ut
+ii  diffstat       1.61-1build1 amd64        produces graph of changes introdu
+ii  diffutils      1:3.6-1      amd64        File comparison utilities
+ii  dirmngr        2.2.4-1ubunt amd64        GNU privacy guard - network certi
+ii  distro-info-da 0.37ubuntu0. all          information about the distributio
+ii  dmidecode      3.1-1ubuntu0 amd64        SMBIOS/DMI table decoder
+ii  dmsetup        2:1.02.145-4 amd64        Linux Kernel Device Mapper usersp
+ii  dmz-cursor-the 0.4.5ubuntu1 all          Style neutral, scalable cursor th
+ii  dns-root-data  2018013001   all          DNS root data including root zone
+ii  dnsmasq-base   2.79-1ubuntu amd64        Small caching DNS proxy and DHCP/
+ii  dnsutils       1:9.11.3+dfs amd64        Clients provided with BIND
+ii  dosfstools     4.1-1        amd64        utilities for making and checking
+ii  dpkg           1.19.0.5ubun amd64        Debian package management system
+ii  dpkg-dev       1.19.0.5ubun all          Debian package development tools
+ii  e2fsprogs      1.44.1-1ubun amd64        ext2/ext3/ext4 file system utilit
+ii  ed             1.10-2.1     amd64        classic UNIX line editor
+ii  efibootmgr     15-1         amd64        Interact with the EFI Boot Manage
+ii  eject          2.1.5+deb1+c amd64        ejects CDs and operates CD-Change
+ii  emacsen-common 2.0.8        all          Common facilities for all emacsen
+ii  enchant        1.6.0-11.1   amd64        Wrapper for various spell checker
+ii  eog            3.28.1-1     amd64        Eye of GNOME graphics viewer prog
+ii  espeak-ng-data 1.49.2+dfsg- amd64        Multi-lingual software speech syn
+ii  evince         3.28.4-0ubun amd64        Document (PostScript, PDF) viewer
+ii  evince-common  3.28.4-0ubun all          Document (PostScript, PDF) viewer
+ii  evolution-data 3.28.5-0ubun amd64        evolution database backend server
+ii  evolution-data 3.28.5-0ubun all          architecture independent files fo
+ii  example-conten 50           all          Ubuntu example content
+ii  fakeroot       1.22-2ubuntu amd64        tool for simulating superuser pri
+ii  fdisk          2.31.1-0.4ub amd64        collection of partitioning utilit
+ii  file           1:5.32-2ubun amd64        Recognize the type of data in a f
+ii  file-roller    3.28.0-1ubun amd64        archive manager for GNOME
+ii  findutils      4.6.0+git+20 amd64        utilities for finding files--find
+ii  firefox        93.0+build1- amd64        Safe and easy web browser from Mo
+ii  firefox-locale 93.0+build1- amd64        English language pack for Firefox
+ii  fontconfig     2.12.6-0ubun amd64        generic font configuration librar
+ii  fontconfig-con 2.12.6-0ubun all          generic font configuration librar
+ii  fonts-beng     2:1.2        all          Metapackage to install Bengali an
+ii  fonts-beng-ext 1.0-6ubuntu0 all          TrueType fonts for Bengali langua
+ii  fonts-dejavu-c 2.37-1       all          Vera font family derivate with ad
+ii  fonts-deva     2:1.2        all          Meta package to install all Devan
+ii  fonts-deva-ext 3.0-4ubuntu0 all          Free fonts for Devanagari script
+ii  fonts-droid-fa 1:6.0.1r16-1 all          handheld device font with extensi
+ii  fonts-freefont 20120503-7   all          Freefont Serif, Sans and Mono Tru
+ii  fonts-gargi    2.0-4        all          OpenType Devanagari font
+ii  fonts-gubbi    1.3-3        all          Gubbi free font for Kannada scrip
+ii  fonts-gujr     2:1.2        all          Meta package to install all Gujar
+ii  fonts-gujr-ext 1.0-6ubuntu0 all          Free fonts for Gujarati script
+ii  fonts-guru     2:1.2        all          Meta package to install all Punja
+ii  fonts-guru-ext 2.0-4ubuntu0 all          Free fonts for Punjabi language
+ii  fonts-indic    2:1.2        all          Meta package to install all India
+ii  fonts-kacst    2.01+mry-14  all          KACST free TrueType Arabic fonts
+ii  fonts-kacst-on 5.0+svn11846 all          TrueType font designed for Arabic
+ii  fonts-kalapi   1.0-2        all          Kalapi Gujarati Unicode font
+ii  fonts-khmeros- 5.0-7ubuntu1 all          KhmerOS Unicode fonts for the Khm
+ii  fonts-knda     2:1.2        all          Meta package for Kannada fonts
+ii  fonts-lao      0.0.20060226 all          TrueType font for Lao language
+ii  fonts-liberati 1:1.07.4-7~1 all          Fonts with the same metrics as Ti
+ii  fonts-liberati 2.00.1-7~18. all          Fonts with the same metrics as Ti
+ii  fonts-lklug-si 0.6-3        all          Unicode Sinhala font by Lanka Lin
+ii  fonts-lohit-be 2.91.5-1     all          Lohit TrueType font for Assamese 
+ii  fonts-lohit-be 2.91.5-1     all          Lohit TrueType font for Bengali L
+ii  fonts-lohit-de 2.95.4-2     all          Lohit TrueType font for Devanagar
+ii  fonts-lohit-gu 2.92.4-2     all          Lohit TrueType font for Gujarati 
+ii  fonts-lohit-gu 2.91.2-1     all          Lohit TrueType font for Punjabi L
+ii  fonts-lohit-kn 2.5.4-1      all          Lohit TrueType font for Kannada L
+ii  fonts-lohit-ml 2.92.2-1     all          Lohit TrueType font for Malayalam
+ii  fonts-lohit-or 2.91.2-1     all          Lohit TrueType font for Oriya Lan
+ii  fonts-lohit-ta 2.91.3-1     all          Lohit TrueType font for Tamil Lan
+ii  fonts-lohit-ta 2.5.4-1      all          Lohit Tamil TrueType fonts for Ta
+ii  fonts-lohit-te 2.5.5-1      all          Lohit TrueType font for Telugu La
+ii  fonts-mlym     2:1.2        all          Meta package to install all Malay
+ii  fonts-nakula   1.0-3        all          Free Unicode compliant Devanagari
+ii  fonts-navilu   1.2-2        all          Handwriting font for Kannada
+ii  fonts-noto-cjk 1:20190409+r all          "No Tofu" font families with larg
+ii  fonts-noto-col 0~20180810-0 all          color emoji font from Google
+ii  fonts-noto-mon 20171026-2   all          "No Tofu" monospaced font family 
+ii  fonts-opensymb 2:102.10+Lib all          OpenSymbol TrueType font
+ii  fonts-orya     2:1.2        all          Meta package to install all Oriya
+ii  fonts-orya-ext 2.0-5ubuntu0 all          Free fonts for Oriya script
+ii  fonts-pagul    1.0-7        all          Free TrueType font for the Souras
+ii  fonts-sahadeva 1.0-4        all          Free Unicode compliant Devanagari
+ii  fonts-samyak-d 1.2.2-4      all          Samyak TrueType font for Devanaga
+ii  fonts-samyak-g 1.2.2-4      all          Samyak TrueType font for Gujarati
+ii  fonts-samyak-m 1.2.2-4      all          Samyak TrueType font for Malayala
+ii  fonts-samyak-t 1.2.2-4      all          Samyak TrueType font for Tamil la
+ii  fonts-sarai    1.0-2        all          truetype font for devanagari scri
+ii  fonts-sil-abys 1.500-1      all          smart Unicode font for Ethiopian 
+ii  fonts-sil-pada 3.003-1      all          Burmese Unicode 6 truetype font w
+ii  fonts-smc      1:7.0        all          Metapackage for various TrueType 
+ii  fonts-smc-anja 7.0-2        all          AnjaliOldLipi malayalam font
+ii  fonts-smc-chil 1.2.0-2      all          Chilanka malayalam font
+ii  fonts-smc-dyut 2.0-1        all          Dyuthi malayalam font
+ii  fonts-smc-karu 1.0-1        all          Karumbi malayalam font
+ii  fonts-smc-kera 2.0-1        all          Keraleeyam malayalam font
+ii  fonts-smc-manj 1.5.1-1      all          Manjari malayalam font
+ii  fonts-smc-meer 7.0-2        all          Meera malayalam font
+ii  fonts-smc-rach 7.0-2        all          Rachana malayalam font
+ii  fonts-smc-ragh 2.1.1-2      all          RaghuMalayalamSans malayalam font
+ii  fonts-smc-suru 3.2.1-1      all          Suruma malayalam font
+ii  fonts-smc-uroo 2.0-1        all          Uroob malayalam font
+ii  fonts-taml     2:1.3        all          Meta package to install all Tamil
+ii  fonts-telu     2:1.2        all          Meta package to install all Telug
+ii  fonts-telu-ext 2.0-4        all          Free fonts for Telugu script
+ii  fonts-thai-tlw 1:0.6.4-2    all          Thai fonts maintained by TLWG (me
+ii  fonts-tibetan- 1.901b-5     all          font for Tibetan, Dzongkha and La
+ii  fonts-tlwg-gar 1:0.6.4-2    all          Thai Garuda font (dependency pack
+ii  fonts-tlwg-gar 1:0.6.4-2    all          Thai Garuda TrueType font
+ii  fonts-tlwg-kin 1:0.6.4-2    all          Thai Kinnari font (dependency pac
+ii  fonts-tlwg-kin 1:0.6.4-2    all          Thai Kinnari TrueType font
+ii  fonts-tlwg-lak 1:0.6.4-2    all          Thai Laksaman font (dependency pa
+ii  fonts-tlwg-lak 1:0.6.4-2    all          Thai Laksaman TrueType font
+ii  fonts-tlwg-lom 1:0.6.4-2    all          Thai Loma font (dependency packag
+ii  fonts-tlwg-lom 1:0.6.4-2    all          Thai Loma TrueType font
+ii  fonts-tlwg-mon 1:0.6.4-2    all          Thai TlwgMono font (dependency pa
+ii  fonts-tlwg-mon 1:0.6.4-2    all          Thai TlwgMono TrueType font
+ii  fonts-tlwg-nor 1:0.6.4-2    all          Thai Norasi font (dependency pack
+ii  fonts-tlwg-nor 1:0.6.4-2    all          Thai Norasi TrueType font
+ii  fonts-tlwg-pur 1:0.6.4-2    all          Thai Purisa font (dependency pack
+ii  fonts-tlwg-pur 1:0.6.4-2    all          Thai Purisa TrueType font
+ii  fonts-tlwg-saw 1:0.6.4-2    all          Thai Sawasdee font (dependency pa
+ii  fonts-tlwg-saw 1:0.6.4-2    all          Thai Sawasdee TrueType font
+ii  fonts-tlwg-typ 1:0.6.4-2    all          Thai TlwgTypewriter font (depende
+ii  fonts-tlwg-typ 1:0.6.4-2    all          Thai TlwgTypewriter TrueType font
+ii  fonts-tlwg-typ 1:0.6.4-2    all          Thai TlwgTypist font (dependency 
+ii  fonts-tlwg-typ 1:0.6.4-2    all          Thai TlwgTypist TrueType font
+ii  fonts-tlwg-typ 1:0.6.4-2    all          Thai TlwgTypo font (dependency pa
+ii  fonts-tlwg-typ 1:0.6.4-2    all          Thai TlwgTypo TrueType font
+ii  fonts-tlwg-ump 1:0.6.4-2    all          Thai Umpush font (dependency pack
+ii  fonts-tlwg-ump 1:0.6.4-2    all          Thai Umpush TrueType font
+ii  fonts-tlwg-war 1:0.6.4-2    all          Thai Waree font (dependency packa
+ii  fonts-tlwg-war 1:0.6.4-2    all          Thai Waree TrueType font
+ii  fonts-ubuntu   0.83-2       all          sans-serif font set from Ubuntu
+ii  foomatic-db-co 20180306-1   all          OpenPrinting printer support - Co
+ii  friendly-recov 0.2.38ubuntu all          Make recovery boot mode more user
+ii  ftp            0.17-34      amd64        classical file transfer client
+ii  fuse           2.9.7-1ubunt amd64        Filesystem in Userspace
+ii  fwupd          1.2.10-1ubun amd64        Firmware update daemon
+ii  fwupd-signed   1.10~ubuntu1 amd64        Linux Firmware Updater EFI signed
+ii  fwupdate       12-7~ubuntu1 amd64        Transitional package for fwupd
+ii  fwupdate-signe 12-7~ubuntu1 amd64        Transitional package for fwupd
+ii  g++            4:7.4.0-1ubu amd64        GNU C++ compiler
+ii  g++-7          7.5.0-3ubunt amd64        GNU C++ compiler
+ii  gcc            4:7.4.0-1ubu amd64        GNU C compiler
+ii  gcc-7          7.5.0-3ubunt amd64        GNU C compiler
+ii  gcc-7-base:amd 7.5.0-3ubunt amd64        GCC, the GNU Compiler Collection 
+ii  gcc-8-base:amd 8.4.0-1ubunt amd64        GCC, the GNU Compiler Collection 
+ii  gcr            3.28.0-1     amd64        GNOME crypto services (daemon and
+ii  gdb            8.1-0ubuntu3 amd64        GNU Debugger
+ii  gdbserver      8.1-0ubuntu3 amd64        GNU Debugger (remote server)
+ii  gdisk          1.0.3-1      amd64        GPT fdisk text-mode partitioning 
+ii  gdm3           3.28.3-0ubun amd64        GNOME Display Manager
+ii  gedit          3.28.1-1ubun amd64        official text editor of the GNOME
+ii  gedit-common   3.28.1-1ubun all          official text editor of the GNOME
+ii  genisoimage    9:1.1.11-3ub amd64        Creates ISO-9660 CD-ROM filesyste
+ii  geoclue-2.0    2.4.7-1ubunt amd64        geoinformation service
+ii  geoip-database 20180315-1   all          IP lookup command line tools that
+ii  gettext        0.19.8.1-6ub amd64        GNU Internationalization utilitie
+ii  gettext-base   0.19.8.1-6ub amd64        GNU Internationalization utilitie
+ii  ghostscript    9.26~dfsg+0- amd64        interpreter for the PostScript la
+ii  ghostscript-x  9.26~dfsg+0- amd64        interpreter for the PostScript la
+ii  gir1.2-account 0.6.45-1ubun amd64        GObject introspection data for Ac
+ii  gir1.2-atk-1.0 2.28.1-1     amd64        ATK accessibility toolkit (GObjec
+ii  gir1.2-atspi-2 2.28.0-1     amd64        Assistive Technology Service Prov
+ii  gir1.2-dbusmen 16.04.1+18.0 amd64        typelib file for libdbusmenu-glib
+ii  gir1.2-dee-1.0 1.2.7+17.10. amd64        GObject introspection data for th
+ii  gir1.2-freedes 1.56.1-1     amd64        Introspection data for some FreeD
+ii  gir1.2-gck-1:a 3.28.0-1     amd64        GObject introspection data for th
+ii  gir1.2-gcr-3:a 3.28.0-1     amd64        GObject introspection data for th
+ii  gir1.2-gdeskto 3.28.0-1ubun amd64        GObject introspection for GSettin
+ii  gir1.2-gdkpixb 2.36.11-2    amd64        GDK Pixbuf library - GObject-Intr
+ii  gir1.2-gdm-1.0 3.28.3-0ubun amd64        GObject introspection data for th
+ii  gir1.2-geoclue 2.4.7-1ubunt amd64        convenience library to interact w
+ii  gir1.2-geocode 3.25.4.1-4ub amd64        introspection data for geocode-gl
+ii  gir1.2-glib-2. 1.56.1-1     amd64        Introspection data for GLib, GObj
+ii  gir1.2-gmenu-3 3.13.3-11ubu amd64        GObject introspection data for th
+ii  gir1.2-gnomebl 3.28.0-2ubun amd64        Introspection data for GnomeBluet
+ii  gir1.2-gnomede 3.28.2-0ubun amd64        Introspection data for GnomeDeskt
+ii  gir1.2-goa-1.0 3.28.0-0ubun amd64        Introspection data for GNOME Onli
+ii  gir1.2-gst-plu 1.14.5-0ubun amd64        GObject introspection data for th
+ii  gir1.2-gstream 1.14.5-0ubun amd64        GObject introspection data for th
+ii  gir1.2-gtk-3.0 3.22.30-1ubu amd64        GTK+ graphical user interface lib
+ii  gir1.2-gtksour 3.24.7-1     amd64        gir files for the GTK+ syntax hig
+ii  gir1.2-gudev-1 1:232-2      amd64        libgudev-1.0 introspection data
+ii  gir1.2-gweathe 3.28.2-1~ubu amd64        GObject introspection data for th
+ii  gir1.2-ibus-1. 1.5.17-3ubun amd64        Intelligent Input Bus - introspec
+ii  gir1.2-javascr 2.32.4-0ubun amd64        JavaScript engine library from We
+ii  gir1.2-json-1. 1.4.2-3ubunt amd64        GLib JSON manipulation library (i
+ii  gir1.2-mutter- 3.28.4-0ubun amd64        GObject introspection data for Mu
+ii  gir1.2-nm-1.0: 1.10.6-2ubun amd64        GObject introspection data for th
+ii  gir1.2-nma-1.0 1.8.10-2ubun amd64        GObject introspection data for li
+ii  gir1.2-notify- 0.7.7-3      amd64        sends desktop notifications to a 
+ii  gir1.2-package 1.1.9-1ubunt amd64        GObject introspection data for th
+ii  gir1.2-pango-1 1.40.14-1ubu amd64        Layout and rendering of internati
+ii  gir1.2-peas-1. 1.22.0-2     amd64        Application plugin library (intro
+ii  gir1.2-polkit- 0.105-20ubun amd64        GObject introspection data for Po
+ii  gir1.2-rb-3.0: 3.4.2-4ubunt amd64        GObject introspection data for th
+ii  gir1.2-rsvg-2. 2.40.20-2ubu amd64        gir files for renderer library fo
+ii  gir1.2-secret- 0.18.6-1     amd64        Secret store (GObject-Introspecti
+ii  gir1.2-snapd-1 1.49-0ubuntu amd64        Typelib file for libsnapd-glib1
+ii  gir1.2-soup-2. 2.62.1-1ubun amd64        GObject introspection data for th
+ii  gir1.2-totem-1 3.26.0-0ubun amd64        GObject introspection data for To
+ii  gir1.2-totempl 3.26.0-1ubun amd64        GObject introspection data for th
+ii  gir1.2-udisks- 2.7.6-3ubunt amd64        GObject based library to access u
+ii  gir1.2-unity-5 7.1.4+18.04. amd64        GObject introspection data for th
+ii  gir1.2-upowerg 0.99.7-2ubun amd64        GObject introspection data for up
+ii  gir1.2-vte-2.9 0.52.2-1ubun amd64        GObject introspection data for th
+ii  gir1.2-webkit2 2.32.4-0ubun amd64        Web content engine library for GT
+ii  gir1.2-wnck-3. 3.24.1-2     amd64        GObject introspection data for th
+ii  git            1:2.17.1-1ub amd64        fast, scalable, distributed revis
+ii  git-man        1:2.17.1-1ub all          fast, scalable, distributed revis
+ii  gjs            1.52.5-0ubun amd64        Mozilla-based javascript bindings
+ii  gkbd-capplet   3.26.0-3ubun amd64        GNOME control center tools for li
+ii  glib-networkin 2.56.0-1ubun amd64        network-related giomodules for GL
+ii  glib-networkin 2.56.0-1ubun all          network-related giomodules for GL
+ii  glib-networkin 2.56.0-1ubun amd64        network-related giomodules for GL
+ii  gnome-accessib 3.28-1ubuntu all          High Contrast GTK+ 2 theme and ic
+ii  gnome-bluetoot 3.28.0-2ubun amd64        GNOME Bluetooth tools
+ii  gnome-calendar 3.28.2-0ubun amd64        Calendar application for GNOME
+ii  gnome-control- 1:3.28.2-0ub amd64        utilities to configure the GNOME 
+ii  gnome-control- 1:3.28.2-0ub all          configuration applets for GNOME -
+ii  gnome-control- 1:3.28.2-0ub all          utilities to configure the GNOME 
+ii  gnome-desktop3 3.28.2-0ubun all          Common files for GNOME desktop ap
+ii  gnome-disk-uti 3.28.3-0ubun amd64        manage and configure disk drives 
+ii  gnome-font-vie 3.28.0-1     amd64        font viewer for GNOME
+ii  gnome-getting- 3.28.2-0ubun all          Help a new user get started in GN
+ii  gnome-initial- 3.28.0-2ubun amd64        Initial GNOME system setup helper
+ii  gnome-keyring  3.28.0.2-1ub amd64        GNOME keyring services (daemon an
+ii  gnome-keyring- 3.28.0.2-1ub amd64        GNOME keyring module for the PKCS
+ii  gnome-mahjongg 1:3.22.0-3   amd64        classic Eastern tile game for GNO
+ii  gnome-menus    3.13.3-11ubu amd64        GNOME implementation of the freed
+ii  gnome-mines    1:3.28.0-1ub amd64        popular minesweeper puzzle game f
+ii  gnome-online-a 3.28.0-0ubun amd64        service to manage online accounts
+ii  gnome-power-ma 3.26.0-1     amd64        power management tool for the GNO
+ii  gnome-screensh 3.25.0-0ubun amd64        screenshot application for GNOME
+ii  gnome-session- 3.28.1-0ubun amd64        GNOME Session Manager - Minimal r
+ii  gnome-session- 0.30-5ubuntu amd64        GNOME session log in and log out 
+ii  gnome-session- 3.28.1-0ubun all          GNOME Session Manager - common fi
+ii  gnome-settings 3.28.1-0ubun amd64        daemon handling the GNOME session
+ii  gnome-settings 3.28.1-0ubun all          Shared schemas for gnome-settings
+ii  gnome-shell    3.28.4-0ubun amd64        graphical shell for the GNOME des
+ii  gnome-shell-co 3.28.4-0ubun all          common files for the GNOME graphi
+ii  gnome-shell-ex 18.04.1      all          App indicators for GNOME Shell
+ii  gnome-shell-ex 0.9.1ubuntu1 all          Ubuntu Dock for GNOME Shell
+ii  gnome-software 3.28.1-0ubun amd64        Software Center for GNOME
+ii  gnome-software 3.28.1-0ubun all          Software Center for GNOME (common
+ii  gnome-software 3.28.1-0ubun amd64        Snap support for GNOME Software
+ii  gnome-startup- 3.28.1-0ubun amd64        Startup Applications manager for 
+ii  gnome-sudoku   1:3.28.0-1   amd64        Sudoku puzzle game for GNOME
+ii  gnome-terminal 3.28.2-1ubun amd64        GNOME terminal emulator applicati
+ii  gnome-terminal 3.28.2-1ubun all          Data files for the GNOME terminal
+ii  gnome-themes-e 3.28-1ubuntu amd64        Adwaita GTK+ 2 theme — engine
+ii  gnome-themes-e 3.28-1ubuntu all          Adwaita GTK+ 2 theme — common fil
+ii  gnome-todo     3.28.1-1     amd64        minimalistic personal task manage
+ii  gnome-todo-com 3.28.1-1     all          common files for GNOME To Do
+ii  gnome-user-doc 3.28.2+git20 all          GNOME user's guide
+ii  gnome-user-gui 3.28.2+git20 all          GNOME user's guide - dummy transi
+ii  gnome-video-ef 0.4.3-1ubunt all          Collection of GStreamer effects
+ii  gnupg          2.2.4-1ubunt amd64        GNU privacy guard - a free PGP re
+ii  gnupg-l10n     2.2.4-1ubunt all          GNU privacy guard - localization 
+ii  gnupg-utils    2.2.4-1ubunt amd64        GNU privacy guard - utility progr
+ii  gpg            2.2.4-1ubunt amd64        GNU Privacy Guard -- minimalist p
+ii  gpg-agent      2.2.4-1ubunt amd64        GNU privacy guard - cryptographic
+ii  gpg-wks-client 2.2.4-1ubunt amd64        GNU privacy guard - Web Key Servi
+ii  gpg-wks-server 2.2.4-1ubunt amd64        GNU privacy guard - Web Key Servi
+ii  gpgconf        2.2.4-1ubunt amd64        GNU privacy guard - core configur
+ii  gpgsm          2.2.4-1ubunt amd64        GNU privacy guard - S/MIME versio
+ii  gpgv           2.2.4-1ubunt amd64        GNU privacy guard - signature ver
+ii  grep           3.1-2build1  amd64        GNU grep, egrep and fgrep
+ii  grilo-plugins- 0.3.5-1ubunt amd64        Framework for discovering and bro
+ii  groff-base     1.22.3-10    amd64        GNU troff text-formatting system 
+ii  grub-common    2.02-2ubuntu amd64        GRand Unified Bootloader (common 
+ii  grub-gfxpayloa 0.7          amd64        GRUB gfxpayload blacklist
+ii  grub-pc        2.02-2ubuntu amd64        GRand Unified Bootloader, version
+ii  grub-pc-bin    2.02-2ubuntu amd64        GRand Unified Bootloader, version
+ii  grub2-common   2.02-2ubuntu amd64        GRand Unified Bootloader (common 
+ii  gsettings-desk 3.28.0-1ubun all          GSettings desktop-wide schemas
+ii  gsettings-ubun 0.0.7+17.10. all          GSettings deskop-wide schemas for
+ii  gsfonts        1:8.11+urwcy all          Fonts for the Ghostscript interpr
+ii  gstreamer1.0-a 1.14.5-0ubun amd64        GStreamer plugin for ALSA
+ii  gstreamer1.0-c 3.0.26-1     amd64        Clutter PLugin for GStreamer 1.0
+ii  gstreamer1.0-g 1.14.5-0ubun amd64        GStreamer plugins for GL
+ii  gstreamer1.0-g 1.14.5-0ubun amd64        GStreamer plugin for GTK+3
+ii  gstreamer1.0-p 1.1.9-1ubunt amd64        GStreamer plugin to install codec
+ii  gstreamer1.0-p 1.14.5-0ubun amd64        GStreamer plugins from the "base"
+ii  gstreamer1.0-p 1.14.5-0ubun amd64        GStreamer helper programs from th
+ii  gstreamer1.0-p 1.14.5-0ubun amd64        GStreamer plugins from the "good"
+ii  gstreamer1.0-p 1.14.5-0ubun amd64        GStreamer plugin for PulseAudio
+ii  gstreamer1.0-t 1.14.5-0ubun amd64        Tools for use with GStreamer
+ii  gstreamer1.0-x 1.14.5-0ubun amd64        GStreamer plugins for X11 and Pan
+ii  gtk-update-ico 3.22.30-1ubu amd64        icon theme caching utility
+ii  gtk2-engines-m 0.98.2-2ubun amd64        cairo-based gtk+-2.0 theme engine
+ii  gtk2-engines-p 2.24.32-1ubu amd64        pixbuf-based theme for GTK+ 2.x
+ii  guile-2.0-libs 2.0.13+1-5ub amd64        Core Guile libraries
+ii  gvfs:amd64     1.36.1-0ubun amd64        userspace virtual filesystem - GI
+ii  gvfs-backends  1.36.1-0ubun amd64        userspace virtual filesystem - ba
+ii  gvfs-bin       1.36.1-0ubun amd64        userspace virtual filesystem - bi
+ii  gvfs-common    1.36.1-0ubun all          userspace virtual filesystem - co
+ii  gvfs-daemons   1.36.1-0ubun amd64        userspace virtual filesystem - se
+ii  gvfs-fuse      1.36.1-0ubun amd64        userspace virtual filesystem - fu
+ii  gvfs-libs:amd6 1.36.1-0ubun amd64        userspace virtual filesystem - pr
+ii  gzip           1.6-5ubuntu1 amd64        GNU compression utilities
+ii  hdparm         9.54+ds-1    amd64        tune hard disk parameters for hig
+ii  hicolor-icon-t 0.17-2       all          default fallback theme for FreeDe
+ii  hostname       3.20         amd64        utility to set/show the host name
+ii  hplip          3.17.10+repa amd64        HP Linux Printing and Imaging Sys
+ii  hplip-data     3.17.10+repa all          HP Linux Printing and Imaging - d
+ii  humanity-icon- 0.6.15       all          Humanity Icon theme
+ii  hunspell-en-us 1:2017.08.24 all          English_american dictionary for h
+ii  hyphen-en-us   2.8.8-5      all          English (US) hyphenation patterns
+ii  ibus           1.5.17-3ubun amd64        Intelligent Input Bus - core
+ii  ibus-gtk:amd64 1.5.17-3ubun amd64        Intelligent Input Bus - GTK+2 sup
+ii  ibus-gtk3:amd6 1.5.17-3ubun amd64        Intelligent Input Bus - GTK+3 sup
+ii  ibus-table     1.9.14-3     all          table engine for IBus
+ii  ifupdown       0.8.17ubuntu amd64        high level tools to configure net
+ii  iio-sensor-pro 2.4-2        amd64        IIO sensors to D-Bus proxy
+ii  im-config      0.34-1ubuntu all          Input method configuration framew
+ii  imagemagick    8:6.9.7.4+df amd64        image manipulation programs -- bi
+ii  imagemagick-6- 8:6.9.7.4+df all          image manipulation programs -- in
+ii  imagemagick-6. 8:6.9.7.4+df amd64        image manipulation programs -- qu
+ii  info           6.5.0.dfsg.1 amd64        Standalone GNU Info documentation
+ii  init           1.51         amd64        metapackage ensuring an init syst
+ii  init-system-he 1.51         all          helper tools for all init systems
+ii  initramfs-tool 0.130ubuntu3 all          generic modular initramfs generat
+ii  initramfs-tool 0.130ubuntu3 amd64        binaries used by initramfs-tools
+ii  initramfs-tool 0.130ubuntu3 all          generic modular initramfs generat
+ii  inputattach    1:1.6.0-2    amd64        utility to connect serial-attache
+ii  install-info   6.5.0.dfsg.1 amd64        Manage installed documentation in
+ii  intel-microcod 3.20210608.0 amd64        Processor microcode firmware for 
+ii  intltool-debia 0.35.0+20060 all          Help i18n of RFC822 compliant con
+ii  ippusbxd       1.32-2       amd64        Daemon for IPP USB printer suppor
+ii  iproute2       4.15.0-2ubun amd64        networking and traffic control to
+ii  iptables       1.6.1-2ubunt amd64        administration tools for packet f
+ii  iputils-arping 3:20161105-1 amd64        Tool to send ICMP echo requests t
+ii  iputils-ping   3:20161105-1 amd64        Tools to test the reachability of
+ii  iputils-tracep 3:20161105-1 amd64        Tools to trace the network path t
+ii  irqbalance     1.3.0-0.1ubu amd64        Daemon to balance interrupts for 
+ii  isc-dhcp-clien 4.3.5-3ubunt amd64        DHCP client for automatically obt
+ii  isc-dhcp-commo 4.3.5-3ubunt amd64        common manpages relevant to all o
+ii  iso-codes      3.79-1       all          ISO language, territory, currency
+ii  iucode-tool    2.3.1-1      amd64        Intel processor microcode tool
+ii  iw             4.14-0.1     amd64        tool for configuring Linux wirele
+ii  kbd            2.0.4-2ubunt amd64        Linux console font and keytable u
+ii  kerneloops     0.12+git2014 amd64        kernel oops tracker
+ii  keyboard-confi 1.178ubuntu2 all          system-wide keyboard preferences
+ii  klibc-utils    2.0.4-9ubunt amd64        small utilities built with klibc 
+ii  kmod           24-1ubuntu3. amd64        tools for managing Linux kernel m
+ii  krb5-locales   1.16-2ubuntu all          internationalization support for 
+ii  language-pack- 1:18.04+2019 all          translation updates for language 
+ii  language-pack- 1:18.04+2018 all          translations for language English
+ii  language-pack- 1:18.04+2019 all          GNOME translation updates for lan
+ii  language-pack- 1:18.04+2018 all          GNOME translations for language E
+ii  language-selec 0.188.3      all          Language selector for Ubuntu
+ii  language-selec 0.188.3      all          Language selector for Ubuntu
+ii  laptop-detect  0.16         all          system chassis type checker
+ii  less           487-0.1      amd64        pager program similar to more
+ii  libaa1:amd64   1.4p5-44buil amd64        ASCII art library
+ii  libabw-0.1-1:a 0.1.2-1ubunt amd64        library for reading and writing A
+ii  libaccountsser 0.6.45-1ubun amd64        query and manipulate user account
+ii  libacl1:amd64  2.2.52-3buil amd64        Access control list shared librar
+ii  libalgorithm-d 1.19.03-1    all          module to find differences betwee
+ii  libalgorithm-d 0.04-5       amd64        module to find differences betwee
+ii  libalgorithm-m 0.08-3       all          Perl module for three-way merge o
+ii  libao-common   1.2.2+201801 all          Cross Platform Audio Output Libra
+ii  libao4:amd64   1.2.2+201801 amd64        Cross Platform Audio Output Libra
+ii  libapparmor1:a 2.12-4ubuntu amd64        changehat AppArmor library
+ii  libappindicato 12.10.1+18.0 amd64        Application Indicators
+ii  libappstream-g 0.7.7-2      amd64        GNOME library to access AppStream
+ii  libappstream4: 0.12.0-3ubun amd64        Library to access AppStream servi
+ii  libapt-inst2.0 1.6.12ubuntu amd64        deb package format runtime librar
+ii  libapt-pkg-per 0.1.33build1 amd64        Perl interface to libapt-pkg
+ii  libapt-pkg5.0: 1.6.12ubuntu amd64        package management runtime librar
+ii  libarchive-zip 1.60-1ubuntu all          Perl module for manipulation of Z
+ii  libarchive13:a 3.2.2-3.1ubu amd64        Multi-format archive and compress
+ii  libargon2-0:am 0~20161029-1 amd64        memory-hard hashing function - ru
+ii  libart-2.0-2:a 2.3.21-3     amd64        Library of functions for 2D graph
+ii  libasan4:amd64 7.5.0-3ubunt amd64        AddressSanitizer -- a fast memory
+ii  libasn1-8-heim 7.5.0+dfsg-1 amd64        Heimdal Kerberos - ASN.1 library
+ii  libasound2:amd 1.1.3-5ubunt amd64        shared library for ALSA applicati
+ii  libasound2-dat 1.1.3-5ubunt all          Configuration files and profiles 
+ii  libasound2-plu 1.1.1-1ubunt amd64        ALSA library additional plugins
+ii  libaspell15:am 0.60.7~20110 amd64        GNU Aspell spell-checker runtime 
+ii  libassuan0:amd 2.5.1-2      amd64        IPC library for the GnuPG compone
+ii  libasyncns0:am 0.8-6        amd64        Asynchronous name service query l
+ii  libatasmart4:a 0.19-4       amd64        ATA S.M.A.R.T. reading and parsin
+ii  libatk-adaptor 2.26.2-1     amd64        AT-SPI 2 toolkit bridge
+ii  libatk-bridge2 2.26.2-1     amd64        AT-SPI 2 toolkit bridge - shared 
+ii  libatk1.0-0:am 2.28.1-1     amd64        ATK accessibility toolkit
+ii  libatk1.0-data 2.28.1-1     all          Common files for the ATK accessib
+ii  libatm1:amd64  1:2.5.1-2bui amd64        shared library for ATM (Asynchron
+ii  libatomic1:amd 8.4.0-1ubunt amd64        support library providing __atomi
+ii  libatspi2.0-0: 2.28.0-1     amd64        Assistive Technology Service Prov
+ii  libattr1:amd64 1:2.4.47-2bu amd64        Extended attribute shared library
+ii  libaudio2:amd6 1.9.4-6      amd64        Network Audio System - shared lib
+ii  libaudit-commo 1:2.8.2-1ubu all          Dynamic library for security audi
+ii  libaudit1:amd6 1:2.8.2-1ubu amd64        Dynamic library for security audi
+ii  libauthen-sasl 2.1600-1     all          Authen::SASL - SASL Authenticatio
+ii  libavahi-clien 0.7-3.1ubunt amd64        Avahi client library
+ii  libavahi-commo 0.7-3.1ubunt amd64        Avahi common data files
+ii  libavahi-commo 0.7-3.1ubunt amd64        Avahi common library
+ii  libavahi-core7 0.7-3.1ubunt amd64        Avahi's embeddable mDNS/DNS-SD li
+ii  libavahi-glib1 0.7-3.1ubunt amd64        Avahi GLib integration library
+ii  libavahi-ui-gt 0.7-3.1ubunt amd64        Avahi GTK+ User interface library
+ii  libavc1394-0:a 0.5.4-4build amd64        control IEEE 1394 audio/video dev
+ii  libbabeltrace1 1.5.5-1      amd64        Babeltrace conversion libraries
+ii  libbind9-160:a 1:9.11.3+dfs amd64        BIND9 Shared Library used by BIND
+ii  libbinutils:am 2.30-21ubunt amd64        GNU binary utilities (private sha
+ii  libblkid1:amd6 2.31.1-0.4ub amd64        block device ID library
+ii  libblockdev-cr 2.16-2       amd64        Crypto plugin for libblockdev
+ii  libblockdev-fs 2.16-2       amd64        file system plugin for libblockde
+ii  libblockdev-lo 2.16-2       amd64        Loop device plugin for libblockde
+ii  libblockdev-pa 2.16-2       amd64        Partition error utility functions
+ii  libblockdev-pa 2.16-2       amd64        Partitioning plugin for libblockd
+ii  libblockdev-sw 2.16-2       amd64        Swap plugin for libblockdev
+ii  libblockdev-ut 2.16-2       amd64        Utility functions for libblockdev
+ii  libblockdev2:a 2.16-2       amd64        Library for manipulating block de
+ii  libbluetooth3: 5.48-0ubuntu amd64        Library to use the BlueZ Linux Bl
+ii  libboost-date- 1.65.1+dfsg- amd64        set of date-time libraries based 
+ii  libboost-files 1.65.1+dfsg- amd64        filesystem operations (portable p
+ii  libboost-iostr 1.65.1+dfsg- amd64        Boost.Iostreams Library
+ii  libboost-local 1.65.1+dfsg- amd64        C++ facilities for localization
+ii  libboost-syste 1.65.1+dfsg- amd64        Operating system (e.g. diagnostic
+ii  libboost-threa 1.65.1+dfsg- amd64        portable C++ multi-threading
+ii  libbrlapi0.6:a 5.5-4ubuntu2 amd64        braille display access via BRLTTY
+ii  libbrotli1:amd 1.0.3-1ubunt amd64        library implementing brotli encod
+ii  libbsd0:amd64  0.8.7-1ubunt amd64        utility functions from BSD system
+ii  libbz2-1.0:amd 1.0.6-8.1ubu amd64        high-quality block-sorting file c
+ii  libc-bin       2.27-3ubuntu amd64        GNU C Library: Binaries
+ii  libc-dev-bin   2.27-3ubuntu amd64        GNU C Library: Development binari
+ii  libc6:amd64    2.27-3ubuntu amd64        GNU C Library: Shared libraries
+ii  libc6-dbg:amd6 2.27-3ubuntu amd64        GNU C Library: detached debugging
+ii  libc6-dev:amd6 2.27-3ubuntu amd64        GNU C Library: Development Librar
+ii  libcaca0:amd64 0.99.beta19- amd64        colour ASCII art library
+ii  libcairo-gobje 1.004-2build amd64        integrate Cairo into the Glib typ
+ii  libcairo-gobje 1.15.10-2ubu amd64        Cairo 2D vector graphics library 
+ii  libcairo-perl  1.106-2build amd64        Perl interface to the Cairo graph
+ii  libcairo2:amd6 1.15.10-2ubu amd64        Cairo 2D vector graphics library
+ii  libcamel-1.2-6 3.28.5-0ubun amd64        Evolution MIME message handling l
+ii  libcanberra-gt 0.30-5ubuntu amd64        GTK+ 3.0 helper for playing widge
+ii  libcanberra-gt 0.30-5ubuntu amd64        translates GTK3 widgets signals t
+ii  libcanberra-pu 0.30-5ubuntu amd64        PulseAudio backend for libcanberr
+ii  libcanberra0:a 0.30-5ubuntu amd64        simple abstract interface for pla
+ii  libcap-ng0:amd 0.7.7-3.1    amd64        An alternate POSIX capabilities l
+ii  libcap2:amd64  1:2.25-1.2   amd64        POSIX 1003.1e capabilities (libra
+ii  libcap2-bin    1:2.25-1.2   amd64        POSIX 1003.1e capabilities (utili
+ii  libcc1-0:amd64 8.4.0-1ubunt amd64        GCC cc1 plugin for GDB
+ii  libcdio-cdda2: 10.2+0.94+2- amd64        library to read and control digit
+ii  libcdio-parano 10.2+0.94+2- amd64        library to read digital audio CDs
+ii  libcdio17:amd6 1.0.0-2ubunt amd64        library to read and control CD-RO
+ii  libcdparanoia0 3.10.2+debia amd64        audio extraction tool for samplin
+ii  libcdr-0.1-1:a 0.1.4-1build amd64        library for reading and convertin
+ii  libcgi-fast-pe 1:2.13-1     all          CGI subclass for work with FCGI
+ii  libcgi-pm-perl 4.38-1       all          module for Common Gateway Interfa
+ii  libcheese-gtk2 3.28.0-1ubun amd64        tool to take pictures and videos 
+ii  libcheese8:amd 3.28.0-1ubun amd64        tool to take pictures and videos 
+ii  libcilkrts5:am 7.5.0-3ubunt amd64        Intel Cilk Plus language extensio
+ii  libclass-acces 0.51-1       all          Perl module that automatically ge
+ii  libclone-perl  0.39-1       amd64        module for recursively copying Pe
+ii  libclucene-con 2.3.3.4+dfsg amd64        language specific text analyzers 
+ii  libclucene-cor 2.3.3.4+dfsg amd64        core library for full-featured te
+ii  libclutter-1.0 1.26.2+dfsg- amd64        Open GL based interactive canvas 
+ii  libclutter-1.0 1.26.2+dfsg- all          Open GL based interactive canvas 
+ii  libclutter-gst 3.0.26-1     amd64        Open GL based interactive canvas 
+ii  libclutter-gtk 1.8.4-3      amd64        Open GL based interactive canvas 
+ii  libcmis-0.5-5v 0.5.1+git201 amd64        CMIS protocol client library
+ii  libcogl-common 1.22.2-3ubun all          Object oriented GL/GLES Abstracti
+ii  libcogl-pango2 1.22.2-3ubun amd64        Object oriented GL/GLES Abstracti
+ii  libcogl-path20 1.22.2-3ubun amd64        Object oriented GL/GLES Abstracti
+ii  libcogl20:amd6 1.22.2-3ubun amd64        Object oriented GL/GLES Abstracti
+ii  libcolamd2:amd 1:5.1.2-2    amd64        column approximate minimum degree
+ii  libcolord-gtk1 0.1.26-2     amd64        GTK+ convenience library for inte
+ii  libcolord2:amd 1.3.3-2build amd64        system service to manage device c
+ii  libcolorhug2:a 1.3.3-2build amd64        library to access the ColorHug co
+ii  libcom-err2:am 1.44.1-1ubun amd64        common error description library
+ii  libcrack2:amd6 2.9.2-5build amd64        pro-active password checker libra
+ii  libcroco3:amd6 0.6.12-2     amd64        Cascading Style Sheet (CSS) parsi
+ii  libcryptsetup1 2:2.0.2-1ubu amd64        disk encryption support - shared 
+ii  libcups2:amd64 2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  libcupscgi1:am 2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  libcupsfilters 1.20.2-0ubun amd64        OpenPrinting CUPS Filters - Share
+ii  libcupsimage2: 2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  libcupsmime1:a 2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  libcupsppdc1:a 2.2.7-1ubunt amd64        Common UNIX Printing System(tm) -
+ii  libcurl3-gnutl 7.58.0-2ubun amd64        easy-to-use client-side URL trans
+ii  libdaemon0:amd 0.14-6       amd64        lightweight C library for daemons
+ii  libdata-dump-p 1.23-1       all          Perl module to help dump data str
+ii  libdatrie1:amd 0.2.10-7     amd64        Double-array trie library
+ii  libdazzle-1.0- 3.28.1-1     amd64        feature-filled library for GTK+ a
+ii  libdb5.3:amd64 5.3.28-13.1u amd64        Berkeley v5.3 Database Libraries 
+ii  libdbus-1-3:am 1.12.2-1ubun amd64        simple interprocess messaging sys
+ii  libdbus-glib-1 0.110-2      amd64        deprecated library for D-Bus IPC
+ii  libdbusmenu-gl 16.04.1+18.0 amd64        library for passing menus over DB
+ii  libdbusmenu-gt 16.04.1+18.0 amd64        library for passing menus over DB
+ii  libdbusmenu-gt 16.04.1+18.0 amd64        library for passing menus over DB
+ii  libdconf1:amd6 0.26.0-2ubun amd64        simple configuration storage syst
+ii  libdebconfclie 0.213ubuntu1 amd64        Debian Configuration Management S
+ii  libdee-1.0-4:a 1.2.7+17.10. amd64        model to synchronize multiple ins
+ii  libdevmapper1. 2:1.02.145-4 amd64        Linux Kernel Device Mapper usersp
+ii  libdigest-hmac 1.03+dfsg-1  all          module for creating standard mess
+ii  libdjvulibre-t 3.5.27.1-8ub all          Linguistic support files for libd
+ii  libdjvulibre21 3.5.27.1-8ub amd64        Runtime support for the DjVu imag
+ii  libdmapsharing 2.9.39-2     amd64        DMAP client and server library - 
+ii  libdns-export1 1:9.11.3+dfs amd64        Exported DNS Shared Library
+ii  libdns1100:amd 1:9.11.3+dfs amd64        DNS Shared Library used by BIND
+ii  libdotconf0:am 1.3-0.3fakes amd64        Configuration file parser library
+ii  libdpkg-perl   1.19.0.5ubun all          Dpkg perl modules
+ii  libdrm-amdgpu1 2.4.101-2~18 amd64        Userspace interface to amdgpu-spe
+ii  libdrm-common  2.4.101-2~18 all          Userspace interface to kernel DRM
+ii  libdrm-intel1: 2.4.101-2~18 amd64        Userspace interface to intel-spec
+ii  libdrm-nouveau 2.4.101-2~18 amd64        Userspace interface to nouveau-sp
+ii  libdrm-radeon1 2.4.101-2~18 amd64        Userspace interface to radeon-spe
+ii  libdrm2:amd64  2.4.101-2~18 amd64        Userspace interface to kernel DRM
+ii  libdv4:amd64   1.0.0-11     amd64        software library for DV format di
+ii  libdw1:amd64   0.170-0.4ubu amd64        library that provides access to t
+ii  libe-book-0.1- 0.1.3-1      amd64        library for reading and convertin
+ii  libebackend-1. 3.28.5-0ubun amd64        Utility library for evolution dat
+ii  libebook-1.2-1 3.28.5-0ubun amd64        Client library for evolution addr
+ii  libebook-conta 3.28.5-0ubun amd64        Client library for evolution cont
+ii  libecal-1.2-19 3.28.5-0ubun amd64        Client library for evolution cale
+ii  libedata-book- 3.28.5-0ubun amd64        Backend library for evolution add
+ii  libedata-cal-1 3.28.5-0ubun amd64        Backend library for evolution cal
+ii  libedataserver 3.28.5-0ubun amd64        Utility library for evolution dat
+ii  libedataserver 3.28.5-0ubun amd64        Utility library for evolution dat
+ii  libedit2:amd64 3.1-20170329 amd64        BSD editline and history librarie
+ii  libefiboot1:am 34-1         amd64        Library to manage UEFI variables
+ii  libefivar1:amd 34-1         amd64        Library to manage UEFI variables
+ii  libegl-mesa0:a 20.0.8-0ubun amd64        free implementation of the EGL AP
+ii  libegl1:amd64  1.0.0-2ubunt amd64        Vendor neutral GL dispatch librar
+ii  libegl1-mesa:a 20.0.8-0ubun amd64        transitional dummy package
+ii  libelf1:amd64  0.170-0.4ubu amd64        library to read and write ELF fil
+ii  libemail-valid 1.202-1      all          Perl module for checking the vali
+ii  libenchant1c2a 1.6.0-11.1   amd64        Wrapper library for various spell
+ii  libencode-loca 1.05-1       all          utility to determine the locale e
+ii  libeot0:amd64  0.01-5       amd64        Library for parsing/converting Em
+ii  libepoxy0:amd6 1.4.3-1      amd64        OpenGL function pointer managemen
+ii  libepubgen-0.1 0.1.0-2ubunt amd64        EPUB generator library
+ii  liberror-perl  0.17025-1    all          Perl module for error/exception h
+ii  libespeak-ng1: 1.49.2+dfsg- amd64        Multi-lingual software speech syn
+ii  libestr0:amd64 0.1.10-2.1   amd64        Helper functions for handling str
+ii  libetonyek-0.1 0.1.7-3      amd64        library for reading and convertin
+ii  libevdev2:amd6 1.5.8+dfsg-1 amd64        wrapper library for evdev devices
+ii  libevdocument3 3.28.4-0ubun amd64        Document (PostScript, PDF) render
+ii  libevent-2.1-6 2.1.8-stable amd64        Asynchronous event notification l
+ii  libevview3-3:a 3.28.4-0ubun amd64        Document (PostScript, PDF) render
+ii  libexempi3:amd 2.4.5-2      amd64        library to parse XMP metadata (Li
+ii  libexif12:amd6 0.6.21-4ubun amd64        library to parse EXIF files
+ii  libexiv2-14:am 0.25-3.1ubun amd64        EXIF/IPTC/XMP metadata manipulati
+ii  libexpat1:amd6 2.2.5-3ubunt amd64        XML parsing C library - runtime l
+ii  libexpat1-dev: 2.2.5-3ubunt amd64        XML parsing C library - developme
+ii  libexporter-ti 1.000000-2   all          tiny exporter similar to Sub::Exp
+ii  libext2fs2:amd 1.44.1-1ubun amd64        ext2/ext3/ext4 file system librar
+ii  libexttextcat- 3.4.5-1      amd64        Language detection library
+ii  libexttextcat- 3.4.5-1      all          Language detection library - data
+ii  libfakeroot:am 1.22-2ubuntu amd64        tool for simulating superuser pri
+ii  libfastjson4:a 0.99.8-2     amd64        fast json library for C
+ii  libfcgi-perl   0.78-2build1 amd64        helper module for FastCGI
+ii  libfdisk1:amd6 2.31.1-0.4ub amd64        fdisk partitioning library
+ii  libffi6:amd64  3.2.1-8      amd64        Foreign Function Interface librar
+ii  libfftw3-doubl 3.3.7-1      amd64        Library for computing Fast Fourie
+ii  libfftw3-singl 3.3.7-1      amd64        Library for computing Fast Fourie
+ii  libfile-basedi 0.07-1       all          Perl module to use the freedeskto
+ii  libfile-copy-r 0.40-1       all          Perl extension for recursively co
+ii  libfile-deskto 0.22-1       all          Perl module to handle freedesktop
+ii  libfile-fcntll 0.22-3build2 amd64        Perl module for file locking with
+ii  libfile-listin 6.04-1       all          module to parse directory listing
+ii  libfile-mimein 0.28-1       all          Perl module to determine file typ
+ii  libflac8:amd64 1.3.2-1      amd64        Free Lossless Audio Codec - runti
+ii  libfont-afm-pe 1.20-2       all          Font::AFM - Interface to Adobe Fo
+ii  libfontconfig1 2.12.6-0ubun amd64        generic font configuration librar
+ii  libfontembed1: 1.20.2-0ubun amd64        OpenPrinting CUPS Filters - Font 
+ii  libfontenc1:am 1:1.1.3-1    amd64        X11 font encoding library
+ii  libfreehand-0. 0.1.2-2      amd64        Library for parsing the FreeHand 
+ii  libfreerdp-cli 2.2.0+dfsg1- amd64        Free Remote Desktop Protocol libr
+ii  libfreerdp2-2: 2.2.0+dfsg1- amd64        Free Remote Desktop Protocol libr
+ii  libfreetype6:a 2.8.1-2ubunt amd64        FreeType 2 font engine, shared li
+ii  libfribidi0:am 0.19.7-2     amd64        Free Implementation of the Unicod
+ii  libfuse2:amd64 2.9.7-1ubunt amd64        Filesystem in Userspace (library)
+ii  libfwup1:amd64 12-3bionic2  amd64        Library to manage UEFI firmware u
+ii  libfwupd2:amd6 1.2.10-1ubun amd64        Firmware update daemon library
+ii  libgail-3-0:am 3.22.30-1ubu amd64        GNOME Accessibility Implementatio
+ii  libgail-common 2.24.32-1ubu amd64        GNOME Accessibility Implementatio
+ii  libgail18:amd6 2.24.32-1ubu amd64        GNOME Accessibility Implementatio
+ii  libgbm1:amd64  20.0.8-0ubun amd64        generic buffer management API -- 
+ii  libgc1c2:amd64 1:7.4.2-8ubu amd64        conservative garbage collector fo
+ii  libgcab-1.0-0: 1.1-2        amd64        Microsoft Cabinet file manipulati
+ii  libgcc-7-dev:a 7.5.0-3ubunt amd64        GCC support library (development 
+ii  libgcc1:amd64  1:8.4.0-1ubu amd64        GCC support library
+ii  libgck-1-0:amd 3.28.0-1     amd64        Glib wrapper library for PKCS#11 
+ii  libgcr-base-3- 3.28.0-1     amd64        Library for Crypto related tasks
+ii  libgcr-ui-3-1: 3.28.0-1     amd64        Library for Crypto UI related tas
+ii  libgcrypt20:am 1.8.1-4ubunt amd64        LGPL Crypto library - runtime lib
+ii  libgd3:amd64   2.2.5-4ubunt amd64        GD Graphics Library
+ii  libgdata-commo 0.17.9-2     all          Library for accessing GData webse
+ii  libgdata22:amd 0.17.9-2     amd64        Library for accessing GData webse
+ii  libgdbm-compat 1.14.1-6     amd64        GNU dbm database routines (legacy
+ii  libgdbm5:amd64 1.14.1-6     amd64        GNU dbm database routines (runtim
+ii  libgdk-pixbuf2 2.36.11-2    amd64        GDK Pixbuf library
+ii  libgdk-pixbuf2 2.36.11-2    amd64        GDK Pixbuf library (thumbnailer)
+ii  libgdk-pixbuf2 2.36.11-2    all          GDK Pixbuf library - data files
+ii  libgdm1        3.28.3-0ubun amd64        GNOME Display Manager (shared lib
+ii  libgee-0.8-2:a 0.20.1-1     amd64        GObject based collection and util
+ii  libgeoclue-2-0 2.4.7-1ubunt amd64        convenience library to interact w
+ii  libgeocode-gli 3.25.4.1-4ub amd64        geocoding and reverse geocoding G
+ii  libgeoip1:amd6 1.6.12-1     amd64        non-DNS IP-to-country resolver li
+ii  libgexiv2-2:am 0.10.8-1     amd64        GObject-based wrapper around the 
+ii  libgirepositor 1.56.1-1     amd64        Library for handling GObject intr
+ii  libgjs0g       1.52.5-0ubun amd64        Mozilla-based javascript bindings
+ii  libgl1:amd64   1.0.0-2ubunt amd64        Vendor neutral GL dispatch librar
+ii  libgl1-mesa-dr 20.0.8-0ubun amd64        free implementation of the OpenGL
+ii  libgl1-mesa-gl 20.0.8-0ubun amd64        transitional dummy package
+ii  libglapi-mesa: 20.0.8-0ubun amd64        free implementation of the GL API
+ii  libgles2:amd64 1.0.0-2ubunt amd64        Vendor neutral GL dispatch librar
+ii  libglib-object 0.044-2      amd64        Perl bindings for gobject-introsp
+ii  libglib-perl   3:1.326-1bui amd64        interface to the GLib and GObject
+ii  libglib2.0-0:a 2.56.4-0ubun amd64        GLib library of C routines
+ii  libglib2.0-bin 2.56.4-0ubun amd64        Programs for the GLib library
+ii  libglib2.0-dat 2.56.4-0ubun all          Common files for GLib library
+ii  libglu1-mesa:a 9.0.0-2.1bui amd64        Mesa OpenGL utility library (GLU)
+ii  libglvnd0:amd6 1.0.0-2ubunt amd64        Vendor neutral GL dispatch librar
+ii  libglx-mesa0:a 20.0.8-0ubun amd64        free implementation of the OpenGL
+ii  libglx0:amd64  1.0.0-2ubunt amd64        Vendor neutral GL dispatch librar
+ii  libgmime-3.0-0 3.2.0-1      amd64        MIME message parser and creator l
+ii  libgmp10:amd64 2:6.1.2+dfsg amd64        Multiprecision arithmetic library
+ii  libgnome-autoa 0.2.3-1ubunt amd64        Archives integration support for 
+ii  libgnome-bluet 3.28.0-2ubun amd64        GNOME Bluetooth tools - support l
+ii  libgnome-deskt 3.28.2-0ubun amd64        Utility library for loading .desk
+ii  libgnome-games 1.4.1-1      amd64        library for common functions of G
+ii  libgnome-games 1.4.1-1      all          library for common functions of G
+ii  libgnome-menu- 3.13.3-11ubu amd64        GNOME implementation of the freed
+ii  libgnome-todo  3.28.1-1     amd64        library data for GNOME To Do
+ii  libgnomekbd-co 3.26.0-3ubun all          GNOME library to manage keyboard 
+ii  libgnomekbd8:a 3.26.0-3ubun amd64        GNOME library to manage keyboard 
+ii  libgnutls30:am 3.5.18-1ubun amd64        GNU TLS library - main runtime li
+ii  libgoa-1.0-0b: 3.28.0-0ubun amd64        library for GNOME Online Accounts
+ii  libgoa-1.0-com 3.28.0-0ubun all          library for GNOME Online Accounts
+ii  libgoa-backend 3.28.0-0ubun amd64        backend library for GNOME Online 
+ii  libgom-1.0-0:a 0.3.3-4      amd64        Object mapper from GObjects to SQ
+ii  libgomp1:amd64 8.4.0-1ubunt amd64        GCC OpenMP (GOMP) support library
+ii  libgpg-error0: 1.27-6       amd64        library for common error values a
+ii  libgpgme11:amd 1.10.0-1ubun amd64        GPGME - GnuPG Made Easy (library)
+ii  libgpgmepp6:am 1.10.0-1ubun amd64        C++ wrapper library for GPGME
+ii  libgphoto2-6:a 2.5.16-2     amd64        gphoto2 digital camera library
+ii  libgphoto2-l10 2.5.16-2     all          gphoto2 digital camera library - 
+ii  libgphoto2-por 2.5.16-2     amd64        gphoto2 digital camera port libra
+ii  libgpm2:amd64  1.20.7-5     amd64        General Purpose Mouse - shared li
+ii  libgpod-common 0.8.3-11     amd64        common files for libgpod
+ii  libgpod4:amd64 0.8.3-11     amd64        library to read and write songs a
+ii  libgraphene-1. 1.8.0-1      amd64        library of graphic data types
+ii  libgraphite2-3 1.3.11-2     amd64        Font rendering engine for Complex
+ii  libgrilo-0.3-0 0.3.4-1ubunt amd64        Framework for discovering and bro
+ii  libgs9:amd64   9.26~dfsg+0- amd64        interpreter for the PostScript la
+ii  libgs9-common  9.26~dfsg+0- all          interpreter for the PostScript la
+ii  libgspell-1-1: 1.6.1-1      amd64        spell-checking library for GTK+ a
+ii  libgspell-1-co 1.6.1-1      all          libgspell architecture-independen
+ii  libgssapi-krb5 1.16-2ubuntu amd64        MIT Kerberos runtime libraries - 
+ii  libgssapi3-hei 7.5.0+dfsg-1 amd64        Heimdal Kerberos - GSSAPI support
+ii  libgstreamer-g 1.14.5-0ubun amd64        GStreamer GL libraries
+ii  libgstreamer-p 1.14.5-0ubun amd64        GStreamer libraries from the "bas
+ii  libgstreamer-p 1.14.5-0ubun amd64        GStreamer development files for l
+ii  libgstreamer1. 1.14.5-0ubun amd64        Core GStreamer libraries and elem
+ii  libgtk-3-0:amd 3.22.30-1ubu amd64        GTK+ graphical user interface lib
+ii  libgtk-3-bin   3.22.30-1ubu amd64        programs for the GTK+ graphical u
+ii  libgtk-3-commo 3.22.30-1ubu all          common files for the GTK+ graphic
+ii  libgtk2.0-0:am 2.24.32-1ubu amd64        GTK+ graphical user interface lib
+ii  libgtk2.0-bin  2.24.32-1ubu amd64        programs for the GTK+ graphical u
+ii  libgtk2.0-comm 2.24.32-1ubu all          common files for the GTK+ graphic
+ii  libgtk3-perl   0.032-1      all          Perl bindings for the GTK+ graphi
+ii  libgtksourcevi 3.24.7-1     amd64        shared libraries for the GTK+ syn
+ii  libgtksourcevi 3.24.7-1     all          common files for the GTK+ syntax 
+ii  libgtop-2.0-11 2.38.0-2ubun amd64        gtop system monitoring library (s
+ii  libgtop2-commo 2.38.0-2ubun all          gtop system monitoring library (c
+ii  libgudev-1.0-0 1:232-2      amd64        GObject-based wrapper library for
+ii  libgusb2:amd64 0.2.11-1     amd64        GLib wrapper around libusb1
+ii  libgutenprint2 5.2.13-2     amd64        runtime for the Gutenprint printe
+ii  libgweather-3- 3.28.2-1~ubu amd64        GWeather shared library
+ii  libgweather-co 3.28.2-1~ubu all          GWeather common files
+ii  libgxps2:amd64 0.3.0-2      amd64        handling and rendering XPS docume
+ii  libharfbuzz-ic 1.7.2-1ubunt amd64        OpenType text shaping engine ICU 
+ii  libharfbuzz0b: 1.7.2-1ubunt amd64        OpenType text shaping engine (sha
+ii  libhcrypto4-he 7.5.0+dfsg-1 amd64        Heimdal Kerberos - crypto library
+ii  libheimbase1-h 7.5.0+dfsg-1 amd64        Heimdal Kerberos - Base library
+ii  libheimntlm0-h 7.5.0+dfsg-1 amd64        Heimdal Kerberos - NTLM support l
+ii  libhogweed4:am 3.4.1-0ubunt amd64        low level cryptographic library (
+ii  libhpmud0:amd6 3.17.10+repa amd64        HP Multi-Point Transport Driver (
+ii  libhtml-form-p 6.03-1       all          module that represents an HTML fo
+ii  libhtml-format 2.12-1       all          module for transforming HTML into
+ii  libhtml-parser 3.72-3build1 amd64        collection of modules that parse 
+ii  libhtml-tagset 3.20-3       all          Data tables pertaining to HTML
+ii  libhtml-tree-p 5.07-1       all          Perl module to represent and crea
+ii  libhttp-cookie 6.04-1       all          HTTP cookie jars
+ii  libhttp-daemon 6.01-1       all          simple http server class
+ii  libhttp-date-p 6.02-1       all          module of date conversion routine
+ii  libhttp-messag 6.14-1       all          perl interface to HTTP style mess
+ii  libhttp-negoti 6.00-2       all          implementation of content negotia
+ii  libhunspell-1. 1.6.2-1      amd64        spell checker and morphological a
+ii  libhx509-5-hei 7.5.0+dfsg-1 amd64        Heimdal Kerberos - X509 support l
+ii  libhyphen0:amd 2.8.8-5      amd64        ALTLinux hyphenation library - sh
+ii  libibus-1.0-5: 1.5.17-3ubun amd64        Intelligent Input Bus - shared li
+ii  libical3:amd64 3.0.1-5      amd64        iCalendar library implementation 
+ii  libice6:amd64  2:1.0.9-2    amd64        X11 Inter-Client Exchange library
+ii  libicu60:amd64 60.2-3ubuntu amd64        International Components for Unic
+ii  libidn11:amd64 1.33-2.1ubun amd64        GNU Libidn library, implementatio
+ii  libidn2-0:amd6 2.0.4-1.1ubu amd64        Internationalized domain names (I
+ii  libiec61883-0: 1.2.0-2      amd64        partial implementation of IEC 618
+ii  libieee1284-3: 0.2.11-13    amd64        cross-platform library for parall
+ii  libijs-0.35:am 0.35-13      amd64        IJS raster image transport protoc
+ii  libilmbase12:a 2.2.0-11ubun amd64        several utility libraries from IL
+ii  libimobiledevi 1.2.1~git201 amd64        Library for communicating with th
+ii  libindicator3- 16.10.0+18.0 amd64        panel indicator applet - shared l
+ii  libinput-bin   1.10.4-1ubun amd64        input device management and event
+ii  libinput10:amd 1.10.4-1ubun amd64        input device management and event
+ii  libio-html-per 1.001-1      all          open an HTML file with automatic 
+ii  libio-pty-perl 1:1.08-1.1bu amd64        Perl module for pseudo tty IO
+ii  libio-socket-i 2.72-2       all          object interface for AF_INET6 dom
+ii  libio-socket-s 2.060-3~ubun all          Perl module implementing object o
+ii  libio-string-p 1.08-3       all          Emulate IO::File interface for in
+ii  libip4tc0:amd6 1.6.1-2ubunt amd64        netfilter libip4tc library
+ii  libip6tc0:amd6 1.6.1-2ubunt amd64        netfilter libip6tc library
+ii  libipc-run-per 0.96-1       all          Perl module for running processes
+ii  libipc-system- 1.25-4       all          Perl module to run commands simpl
+ii  libiptc0:amd64 1.6.1-2ubunt amd64        netfilter libiptc library
+ii  libirs160:amd6 1:9.11.3+dfs amd64        DNS Shared Library used by BIND
+ii  libisc-export1 1:9.11.3+dfs amd64        Exported ISC Shared Library
+ii  libisc169:amd6 1:9.11.3+dfs amd64        ISC Shared Library used by BIND
+ii  libisccc160:am 1:9.11.3+dfs amd64        Command Channel Library used by B
+ii  libisccfg160:a 1:9.11.3+dfs amd64        Config File Handling Library used
+ii  libisl19:amd64 0.19-1       amd64        manipulating sets and relations o
+ii  libitm1:amd64  8.4.0-1ubunt amd64        GNU Transactional Memory Library
+ii  libiw30:amd64  30~pre9-12ub amd64        Wireless tools - library
+ii  libjack-jackd2 1.9.12~dfsg- amd64        JACK Audio Connection Kit (librar
+ii  libjansson4:am 2.11-1       amd64        C library for encoding, decoding 
+ii  libjavascriptc 2.32.4-0ubun amd64        JavaScript engine library from We
+ii  libjbig0:amd64 2.1-3.1build amd64        JBIGkit libraries
+ii  libjbig2dec0:a 0.13-6       amd64        JBIG2 decoder library - shared li
+ii  libjpeg-turbo8 1.5.2-0ubunt amd64        IJG JPEG compliant runtime librar
+ii  libjpeg8:amd64 8c-2ubuntu8  amd64        Independent JPEG Group's JPEG run
+ii  libjson-c3:amd 0.12.1-1.3ub amd64        JSON manipulation library - share
+ii  libjson-glib-1 1.4.2-3ubunt amd64        GLib JSON manipulation library
+ii  libjson-glib-1 1.4.2-3ubunt all          GLib JSON manipulation library (c
+ii  libk5crypto3:a 1.16-2ubuntu amd64        MIT Kerberos runtime libraries - 
+ii  libkeyutils1:a 1.5.9-9.2ubu amd64        Linux Key Management Utilities (l
+ii  libklibc       2.0.4-9ubunt amd64        minimal libc subset for use with 
+ii  libkmod2:amd64 24-1ubuntu3. amd64        libkmod shared library
+ii  libkpathsea6:a 2017.2017061 amd64        TeX Live: path search library for
+ii  libkrb5-26-hei 7.5.0+dfsg-1 amd64        Heimdal Kerberos - libraries
+ii  libkrb5-3:amd6 1.16-2ubuntu amd64        MIT Kerberos runtime libraries
+ii  libkrb5support 1.16-2ubuntu amd64        MIT Kerberos runtime libraries - 
+ii  libksba8:amd64 1.3.5-2      amd64        X.509 and CMS support library
+ii  liblangtag-com 0.6.2-1      all          library to access tags for identi
+ii  liblangtag1:am 0.6.2-1      amd64        library to access tags for identi
+ii  liblcms2-2:amd 2.9-1ubuntu0 amd64        Little CMS 2 color management lib
+ii  liblcms2-utils 2.9-1ubuntu0 amd64        Little CMS 2 color management lib
+ii  libldap-2.4-2: 2.4.45+dfsg- amd64        OpenLDAP libraries
+ii  libldap-common 2.4.45+dfsg- all          OpenLDAP common files for librari
+ii  libldb1:amd64  2:1.2.3-1ubu amd64        LDAP-like embedded database - sha
+ii  liblirc-client 0.10.0-2     amd64        infra-red remote control support 
+ii  liblist-moreut 0.416-1build amd64        Perl module with additional list 
+ii  libllvm10:amd6 1:10.0.0-4ub amd64        Modular compiler and toolchain te
+ii  libllvm6.0:amd 1:6.0-1ubunt amd64        Modular compiler and toolchain te
+ii  liblocale-gett 1.07-3build2 amd64        module using libc functions for i
+ii  liblouis-data  3.5.0-1ubunt all          Braille translation library - dat
+ii  liblouis14:amd 3.5.0-1ubunt amd64        Braille translation library - sha
+ii  liblouisutdml- 2.7.0-1      amd64        Braille UTDML translation utiliti
+ii  liblouisutdml- 2.7.0-1      all          Braille UTDML translation library
+ii  liblouisutdml8 2.7.0-1      amd64        Braille UTDML translation library
+ii  liblqr-1-0:amd 0.4.2-2.1    amd64        converts plain array images into 
+ii  liblsan0:amd64 8.4.0-1ubunt amd64        LeakSanitizer -- a memory leak de
+ii  libltdl7:amd64 2.4.6-2      amd64        System independent dlopen wrapper
+ii  liblua5.3-0:am 5.3.3-1ubunt amd64        Shared library for the Lua interp
+ii  liblwp-mediaty 6.02-1       all          module to guess media type for a 
+ii  liblwp-protoco 6.07-2       all          HTTPS driver for LWP::UserAgent
+ii  liblwres160:am 1:9.11.3+dfs amd64        Lightweight Resolver Library used
+ii  liblz4-1:amd64 0.0~r131-2ub amd64        Fast LZ compression algorithm lib
+ii  liblzma5:amd64 5.2.2-1.3    amd64        XZ-format compression library
+ii  liblzo2-2:amd6 2.08-1.2     amd64        data compression library
+ii  libmagic-mgc   1:5.32-2ubun amd64        File type determination library u
+ii  libmagic1:amd6 1:5.32-2ubun amd64        Recognize the type of data in a f
+ii  libmagickcore- 8:6.9.7.4+df amd64        low-level image manipulation libr
+ii  libmagickcore- 8:6.9.7.4+df amd64        low-level image manipulation libr
+ii  libmagickwand- 8:6.9.7.4+df amd64        image manipulation library -- qua
+ii  libmailtools-p 2.18-1       all          Manipulate email in perl programs
+ii  libmbim-glib4: 1.18.0-1~ubu amd64        Support library to use the MBIM p
+ii  libmbim-proxy  1.18.0-1~ubu amd64        Proxy to communicate with MBIM po
+ii  libmediaart-2. 1.9.4-1      amd64        media art extraction and cache ma
+ii  libmessaging-m 13.10.1+17.0 amd64        Messaging Menu - shared library
+ii  libmhash2:amd6 0.9.9.9-7    amd64        Library for cryptographic hashing
+ii  libminiupnpc10 1.9.20140610 amd64        UPnP IGD client lightweight libra
+ii  libmm-glib0:am 1.10.0-1~ubu amd64        D-Bus service for managing modems
+ii  libmnl0:amd64  1.0.4-2      amd64        minimalistic Netlink communicatio
+ii  libmount1:amd6 2.31.1-0.4ub amd64        device mounting library
+ii  libmozjs-52-0: 52.9.1-0ubun amd64        SpiderMonkey JavaScript library
+ii  libmp3lame0:am 3.100-2      amd64        MP3 encoding library
+ii  libmpc3:amd64  1.1.0-1      amd64        multiple precision complex floati
+ii  libmpdec2:amd6 2.4.2-1ubunt amd64        library for decimal floating poin
+ii  libmpfr6:amd64 4.0.1-1      amd64        multiple precision floating-point
+ii  libmpg123-0:am 1.25.10-1    amd64        MPEG layer 1/2/3 audio decoder (s
+ii  libmpx2:amd64  8.4.0-1ubunt amd64        Intel memory protection extension
+ii  libmspub-0.1-1 0.1.4-1      amd64        library for parsing the mspub fil
+ii  libmtdev1:amd6 1.1.5-1ubunt amd64        Multitouch Protocol Translation L
+ii  libmtp-common  1.1.13-1     all          Media Transfer Protocol (MTP) com
+ii  libmtp-runtime 1.1.13-1     amd64        Media Transfer Protocol (MTP) run
+ii  libmtp9:amd64  1.1.13-1     amd64        Media Transfer Protocol (MTP) lib
+ii  libmutter-2-0: 3.28.4-0ubun amd64        window manager library from the M
+ii  libmwaw-0.3-3: 0.3.13-1     amd64        import library for some old Mac t
+ii  libmythes-1.2- 2:1.2.4-3    amd64        simple thesaurus library
+ii  libnatpmp1     20150609-2   amd64        portable and fully compliant impl
+ii  libnautilus-ex 1:3.26.4-0~u amd64        libraries for nautilus components
+ii  libncurses5:am 6.1-1ubuntu1 amd64        shared libraries for terminal han
+ii  libncursesw5:a 6.1-1ubuntu1 amd64        shared libraries for terminal han
+ii  libndp0:amd64  1.6-1        amd64        Library for Neighbor Discovery Pr
+ii  libneon27-gnut 0.30.2-3~ubu amd64        HTTP and WebDAV client library (G
+ii  libnet-dbus-pe 1.1.0-4build amd64        Perl extension for the DBus bindi
+ii  libnet-dns-per 1.10-2       all          Perform DNS queries from a Perl s
+ii  libnet-domain- 1.75-1       all          list of currently available Top-l
+ii  libnet-http-pe 6.17-1       all          module providing low-level HTTP c
+ii  libnet-ip-perl 1.26-1       all          Perl extension for manipulating I
+ii  libnet-libidn- 0.12.ds-2bui amd64        Perl bindings for GNU Libidn
+ii  libnet-smtp-ss 1.04-1       all          Perl module providing SSL support
+ii  libnet-ssleay- 1.84-1ubuntu amd64        Perl module for Secure Sockets La
+ii  libnetfilter-c 1.0.6-2      amd64        Netfilter netlink-conntrack libra
+ii  libnetpbm10    2:10.0-15.3b amd64        Graphics conversion tools shared 
+ii  libnetplan0:am 0.99-0ubuntu amd64        YAML network configuration abstra
+ii  libnettle6:amd 3.4.1-0ubunt amd64        low level cryptographic library (
+ii  libnewt0.52:am 0.52.20-1ubu amd64        Not Erik's Windowing Toolkit - te
+ii  libnfnetlink0: 1.0.1-3      amd64        Netfilter netlink library
+ii  libnghttp2-14: 1.30.0-1ubun amd64        library implementing HTTP/2 proto
+ii  libnih1:amd64  1.0.3-6ubunt amd64        NIH Utility Library
+ii  libnl-3-200:am 3.2.29-0ubun amd64        library for dealing with netlink 
+ii  libnl-genl-3-2 3.2.29-0ubun amd64        library for dealing with netlink 
+ii  libnm0:amd64   1.10.6-2ubun amd64        GObject-based client library for 
+ii  libnma0:amd64  1.8.10-2ubun amd64        library for wireless and mobile d
+ii  libnotify-bin  0.7.7-3      amd64        sends desktop notifications to a 
+ii  libnotify4:amd 0.7.7-3      amd64        sends desktop notifications to a 
+ii  libnpth0:amd64 1.5-3        amd64        replacement for GNU Pth using sys
+ii  libnspr4:amd64 2:4.18-1ubun amd64        NetScape Portable Runtime Library
+ii  libnss-mdns:am 0.10-8ubuntu amd64        NSS module for Multicast DNS name
+ii  libnss-myhostn 237-3ubuntu1 amd64        nss module providing fallback res
+ii  libnss-systemd 237-3ubuntu1 amd64        nss module providing dynamic user
+ii  libnss3:amd64  2:3.35-2ubun amd64        Network Security Service librarie
+ii  libntfs-3g88   1:2017.3.23- amd64        read/write NTFS driver for FUSE (
+ii  libnuma1:amd64 2.0.11-2.1ub amd64        Libraries for controlling NUMA po
+ii  liboauth0:amd6 1.0.3-1      amd64        C library implementing OAuth Core
+ii  libodfgen-0.1- 0.1.6-2      amd64        library to generate ODF documents
+ii  libogg0:amd64  1.3.2-1      amd64        Ogg bitstream library
+ii  libopenexr22:a 2.2.0-11.1ub amd64        runtime files for the OpenEXR ima
+ii  libopus0:amd64 1.1.2-1ubunt amd64        Opus codec runtime library
+ii  liborc-0.4-0:a 1:0.4.28-1   amd64        Library of Optimized Inner Loops 
+ii  liborcus-0.13- 0.13.4-2     amd64        library for processing spreadshee
+ii  libp11-kit0:am 0.23.9-2ubun amd64        library for loading and coordinat
+ii  libpackagekit- 1.1.9-1ubunt amd64        Library for accessing PackageKit 
+ii  libpagemaker-0 0.0.4-1      amd64        Library for importing and convert
+ii  libpam-cap:amd 1:2.25-1.2   amd64        POSIX 1003.1e capabilities (PAM m
+ii  libpam-gnome-k 3.28.0.2-1ub amd64        PAM module to unlock the GNOME ke
+ii  libpam-modules 1.1.8-3.6ubu amd64        Pluggable Authentication Modules 
+ii  libpam-modules 1.1.8-3.6ubu amd64        Pluggable Authentication Modules 
+ii  libpam-runtime 1.1.8-3.6ubu all          Runtime support for the PAM libra
+ii  libpam-systemd 237-3ubuntu1 amd64        system and service manager - PAM 
+ii  libpam0g:amd64 1.1.8-3.6ubu amd64        Pluggable Authentication Modules 
+ii  libpango-1.0-0 1.40.14-1ubu amd64        Layout and rendering of internati
+ii  libpangocairo- 1.40.14-1ubu amd64        Layout and rendering of internati
+ii  libpangoft2-1. 1.40.14-1ubu amd64        Layout and rendering of internati
+ii  libpangoxft-1. 1.40.14-1ubu amd64        Layout and rendering of internati
+ii  libpaper-utils 1.1.24+nmu5u amd64        library for handling paper charac
+ii  libpaper1:amd6 1.1.24+nmu5u amd64        library for handling paper charac
+ii  libparse-debia 1.2.0-12     all          parse Debian changelogs and outpu
+ii  libparted-fs-r 3.2-20ubuntu amd64        disk partition manipulator - shar
+ii  libparted2:amd 3.2-20ubuntu amd64        disk partition manipulator - shar
+ii  libpcap0.8:amd 1.8.1-6ubunt amd64        system interface for user-level p
+ii  libpcaudio0    1.0-1        amd64        C API to different audio devices 
+ii  libpci3:amd64  1:3.5.2-1ubu amd64        Linux PCI Utilities (shared libra
+ii  libpciaccess0: 0.14-1       amd64        Generic PCI access library for X
+ii  libpcre3:amd64 2:8.39-9     amd64        Old Perl 5 Compatible Regular Exp
+ii  libpcsclite1:a 1.8.23-1     amd64        Middleware to access a smart card
+ii  libpeas-1.0-0: 1.22.0-2     amd64        Application plugin library
+ii  libpeas-common 1.22.0-2     all          Application plugin library (commo
+ii  libperl5.26:am 5.26.1-6ubun amd64        shared Perl library
+ii  libperlio-gzip 0.19-1build3 amd64        module providing a PerlIO layer t
+ii  libphonenumber 7.1.0-5ubunt amd64        parsing/formatting/validating pho
+ii  libpipeline1:a 1.5.0-1      amd64        pipeline manipulation library
+ii  libpixman-1-0: 0.34.0-2     amd64        pixel-manipulation library for X 
+ii  libplist3:amd6 2.0.0-2ubunt amd64        Library for handling Apple binary
+ii  libplymouth4:a 0.9.3-1ubunt amd64        graphical boot animation and logg
+ii  libpng16-16:am 1.6.34-1ubun amd64        PNG library - runtime (version 1.
+ii  libpolkit-agen 0.105-20ubun amd64        PolicyKit Authentication Agent AP
+ii  libpolkit-back 0.105-20ubun amd64        PolicyKit backend API
+ii  libpolkit-gobj 0.105-20ubun amd64        PolicyKit Authorization API
+ii  libpoppler-gli 0.62.0-2ubun amd64        PDF rendering library (GLib-based
+ii  libpoppler73:a 0.62.0-2ubun amd64        PDF rendering library
+ii  libpopt0:amd64 1.16-11      amd64        lib for parsing cmdline parameter
+ii  libprocps6:amd 2:3.3.12-3ub amd64        library for accessing process inf
+ii  libprotobuf10: 3.0.0-9.1ubu amd64        protocol buffers C++ library
+ii  libproxy1-plug 0.4.15-1ubun amd64        automatic proxy configuration man
+ii  libproxy1-plug 0.4.15-1ubun amd64        automatic proxy configuration man
+ii  libproxy1v5:am 0.4.15-1ubun amd64        automatic proxy configuration man
+ii  libpsl5:amd64  0.19.1-5buil amd64        Library for Public Suffix List (s
+ii  libpulse-mainl 1:11.1-1ubun amd64        PulseAudio client libraries (glib
+ii  libpulse0:amd6 1:11.1-1ubun amd64        PulseAudio client libraries
+ii  libpulsedsp:am 1:11.1-1ubun amd64        PulseAudio OSS pre-load library
+ii  libpwquality-c 1.4.0-2      all          library for password quality chec
+ii  libpwquality1: 1.4.0-2      amd64        library for password quality chec
+ii  libpython-all- 2.7.15~rc1-1 amd64        package depending on all supporte
+ii  libpython-dev: 2.7.15~rc1-1 amd64        header files and a static library
+ii  libpython-stdl 2.7.15~rc1-1 amd64        interactive high-level object-ori
+ii  libpython2.7:a 2.7.17-1~18. amd64        Shared Python runtime library (ve
+ii  libpython2.7-d 2.7.17-1~18. amd64        Header files and a static library
+ii  libpython2.7-m 2.7.17-1~18. amd64        Minimal subset of the Python lang
+ii  libpython2.7-s 2.7.17-1~18. amd64        Interactive high-level object-ori
+ii  libpython3-std 3.6.7-1~18.0 amd64        interactive high-level object-ori
+ii  libpython3.6:a 3.6.9-1~18.0 amd64        Shared Python runtime library (ve
+ii  libpython3.6-m 3.6.9-1~18.0 amd64        Minimal subset of the Python lang
+ii  libpython3.6-s 3.6.9-1~18.0 amd64        Interactive high-level object-ori
+ii  libqmi-glib5:a 1.22.0-1.2~u amd64        Support library to use the Qualco
+ii  libqmi-proxy   1.22.0-1.2~u amd64        Proxy to communicate with QMI por
+ii  libqpdf21:amd6 8.0.2-3ubunt amd64        runtime library for PDF transform
+ii  libqqwing2v5:a 1.3.4-1.1    amd64        tool for generating and solving S
+ii  libquadmath0:a 8.4.0-1ubunt amd64        GCC Quad-Precision Math Library
+ii  libraptor2-0:a 2.0.14-1ubun amd64        Raptor 2 RDF syntax library
+ii  librasqal3:amd 0.9.32-1buil amd64        Rasqal RDF query library
+ii  libraw1394-11: 2.1.2-1      amd64        library for direct access to IEEE
+ii  libraw16:amd64 0.18.8-1ubun amd64        raw image decoder library
+ii  librdf0:amd64  1.0.17-1.1   amd64        Redland Resource Description Fram
+ii  libreadline7:a 7.0-3        amd64        GNU readline and history librarie
+ii  libreoffice-av 1:6.0.7-0ubu amd64        GStreamer backend for LibreOffice
+ii  libreoffice-ba 1:6.0.7-0ubu amd64        office productivity suite -- shar
+ii  libreoffice-ca 1:6.0.7-0ubu amd64        office productivity suite -- spre
+ii  libreoffice-co 1:6.0.7-0ubu all          office productivity suite -- arch
+ii  libreoffice-co 1:6.0.7-0ubu amd64        office productivity suite -- arch
+ii  libreoffice-dr 1:6.0.7-0ubu amd64        office productivity suite -- draw
+ii  libreoffice-gn 1:6.0.7-0ubu amd64        office productivity suite -- GNOM
+ii  libreoffice-gt 1:6.0.7-0ubu amd64        office productivity suite -- GTK+
+ii  libreoffice-he 1:6.0.7-0ubu all          office productivity suite -- Engl
+ii  libreoffice-im 1:6.0.7-0ubu amd64        office productivity suite -- pres
+ii  libreoffice-ma 1:6.0.7-0ubu amd64        office productivity suite -- equa
+ii  libreoffice-og 1:6.0.7-0ubu amd64        LibreOffice Impress extension for
+ii  libreoffice-pd 1:6.0.7-0ubu all          transitional package for PDF Impo
+ii  libreoffice-st 1:6.0.7-0ubu all          office productivity suite -- Bree
+ii  libreoffice-st 1:6.0.7-0ubu all          office productivity suite -- Gala
+ii  libreoffice-st 1:6.0.7-0ubu all          office productivity suite -- Tang
+ii  libreoffice-wr 1:6.0.7-0ubu amd64        office productivity suite -- word
+ii  librest-0.7-0: 0.8.0-2      amd64        REST service access library
+ii  librevenge-0.0 0.0.4-6ubunt amd64        Base Library for writing document
+ii  librhythmbox-c 3.4.2-4ubunt amd64        support library for the rhythmbox
+ii  libroken18-hei 7.5.0+dfsg-1 amd64        Heimdal Kerberos - roken support 
+ii  librsvg2-2:amd 2.40.20-2ubu amd64        SAX-based renderer library for SV
+ii  librsvg2-commo 2.40.20-2ubu amd64        SAX-based renderer library for SV
+ii  librtmp1:amd64 2.4+20151223 amd64        toolkit for RTMP streams (shared 
+ii  libsamplerate0 0.1.9-1      amd64        Audio sample rate conversion libr
+ii  libsane-common 1.0.27-1~exp all          API library for scanners -- docum
+ii  libsane-hpaio: 3.17.10+repa amd64        HP SANE backend for multi-functio
+ii  libsane1:amd64 1.0.27-1~exp amd64        API library for scanners
+ii  libsasl2-2:amd 2.1.27~101-g amd64        Cyrus SASL - authentication abstr
+ii  libsasl2-modul 2.1.27~101-g amd64        Cyrus SASL - pluggable authentica
+ii  libsasl2-modul 2.1.27~101-g amd64        Cyrus SASL - pluggable authentica
+ii  libsbc1:amd64  1.3-2        amd64        Sub Band CODEC library - runtime
+ii  libseccomp2:am 2.4.3-1ubunt amd64        high level interface to Linux sec
+ii  libsecret-1-0: 0.18.6-1     amd64        Secret store
+ii  libsecret-comm 0.18.6-1     all          Secret store (common files)
+ii  libselinux1:am 2.7-2build2  amd64        SELinux runtime shared libraries
+ii  libsemanage-co 2.7-2build2  all          Common files for SELinux policy m
+ii  libsemanage1:a 2.7-2build2  amd64        SELinux policy management library
+ii  libsensors4:am 1:3.4.0-4    amd64        library to read temperature/volta
+ii  libsepol1:amd6 2.7-1        amd64        SELinux library for manipulating 
+ii  libsgutils2-2  1.42-2ubuntu amd64        utilities for devices using the S
+ii  libshout3:amd6 2.4.1-2build amd64        MP3/Ogg Vorbis broadcast streamin
+ii  libslang2:amd6 2.3.1a-3ubun amd64        S-Lang programming library - runt
+ii  libsm6:amd64   2:1.2.2-1    amd64        X11 Session Management library
+ii  libsmartcols1: 2.31.1-0.4ub amd64        smart column output alignment lib
+ii  libsmbclient:a 2:4.7.6+dfsg amd64        shared library for communication 
+ii  libsmbios-c2   2.4.1-1      amd64        Provide access to (SM)BIOS inform
+ii  libsnapd-glib1 1.49-0ubuntu amd64        GLib snapd library
+ii  libsndfile1:am 1.0.28-4ubun amd64        Library for reading/writing audio
+ii  libsnmp-base   5.7.3+dfsg-1 all          SNMP configuration script, MIBs a
+ii  libsnmp30:amd6 5.7.3+dfsg-1 amd64        SNMP (Simple Network Management P
+ii  libsocket6-per 0.27-1build2 amd64        Perl extensions for IPv6
+ii  libsodium23:am 1.0.16-2     amd64        Network communication, cryptograp
+ii  libsonic0:amd6 0.2.0-6      amd64        Simple library to speed up or slo
+ii  libsoup-gnome2 2.62.1-1ubun amd64        HTTP library implementation in C 
+ii  libsoup2.4-1:a 2.62.1-1ubun amd64        HTTP library implementation in C 
+ii  libspectre1:am 0.2.8-1      amd64        Library for rendering PostScript 
+ii  libspeechd2:am 0.8.8-1ubunt amd64        Speech Dispatcher: Shared librari
+ii  libspeex1:amd6 1.2~rc1.2-1u amd64        The Speex codec runtime library
+ii  libspeexdsp1:a 1.2~rc1.2-1u amd64        The Speex extended runtime librar
+ii  libsqlite3-0:a 3.22.0-1ubun amd64        SQLite 3 shared library
+ii  libss2:amd64   1.44.1-1ubun amd64        command-line interface parsing li
+ii  libssh-4:amd64 0.8.0~201708 amd64        tiny C SSH library (OpenSSL flavo
+ii  libssl1.0.0:am 1.0.2n-1ubun amd64        Secure Sockets Layer toolkit - sh
+ii  libssl1.1:amd6 1.1.1-1ubunt amd64        Secure Sockets Layer toolkit - sh
+ii  libstartup-not 0.12-5       amd64        library for program launch feedba
+ii  libstdc++-7-de 7.5.0-3ubunt amd64        GNU Standard C++ Library v3 (deve
+ii  libstdc++6:amd 8.4.0-1ubunt amd64        GNU Standard C++ Library v3
+ii  libstemmer0d:a 0+svn585-1bu amd64        Snowball stemming algorithms for 
+ii  libsub-name-pe 0.21-1build1 amd64        module for assigning a new name t
+ii  libsuitesparse 1:5.1.2-2    amd64        configuration routines for all Su
+ii  libsysmetrics1 1.3.2        amd64        Report hardware and other collect
+ii  libsystemd0:am 237-3ubuntu1 amd64        systemd utility library
+ii  libtag1v5:amd6 1.11.1+dfsg. amd64        audio meta-data library
+ii  libtag1v5-vani 1.11.1+dfsg. amd64        audio meta-data library - vanilla
+ii  libtalloc2:amd 2.1.10-2ubun amd64        hierarchical pool based memory al
+ii  libtasn1-6:amd 4.13-2       amd64        Manage ASN.1 structures (runtime)
+ii  libtcl8.6:amd6 8.6.8+dfsg-3 amd64        Tcl (the Tool Command Language) v
+ii  libtdb1:amd64  1.3.15-2     amd64        Trivial Database - shared library
+ii  libteamdctl0:a 1.26-1       amd64        library for communication with `t
+ii  libtevent0:amd 0.9.34-1     amd64        talloc-based event loop library -
+ii  libtext-charwi 0.04-7.1     amd64        get display widths of characters 
+ii  libtext-iconv- 1.7-5build6  amd64        converts between character sets i
+ii  libtext-levens 0.13-1       all          implementation of the Levenshtein
+ii  libtext-wrapi1 0.06-7.1     all          internationalized substitute of T
+ii  libthai-data   0.1.27-2     all          Data files for Thai language supp
+ii  libthai0:amd64 0.1.27-2     amd64        Thai language support library
+ii  libtheora0:amd 1.1.1+dfsg.1 amd64        Theora Video Compression Codec
+ii  libtie-ixhash- 1.23-2       all          Perl module to order associative 
+ii  libtiff5:amd64 4.0.9-5ubunt amd64        Tag Image File Format (TIFF) libr
+ii  libtimedate-pe 2.3000-2     all          collection of modules to manipula
+ii  libtinfo5:amd6 6.1-1ubuntu1 amd64        shared low-level terminfo library
+ii  libtk8.6:amd64 8.6.8-4      amd64        Tk toolkit for Tcl and X11 v8.6 -
+ii  libtotem-plpar 3.26.0-1ubun all          Totem Playlist Parser library - c
+ii  libtotem-plpar 3.26.0-1ubun amd64        Totem Playlist Parser library - r
+ii  libtotem0:amd6 3.26.0-0ubun amd64        Main library for the Totem media 
+ii  libtracker-spa 2.0.3-1ubunt amd64        metadata database, indexer and se
+ii  libtry-tiny-pe 0.30-1       all          module providing minimalistic try
+ii  libtsan0:amd64 8.4.0-1ubunt amd64        ThreadSanitizer -- a Valgrind-bas
+ii  libtwolame0:am 0.3.13-3     amd64        MPEG Audio Layer 2 encoding libra
+ii  libu2f-udev    1.1.4-1ubunt all          Universal 2nd Factor (U2F) common
+ii  libubsan0:amd6 7.5.0-3ubunt amd64        UBSan -- undefined behaviour sani
+ii  libudev1:amd64 237-3ubuntu1 amd64        libudev shared library
+ii  libudisks2-0:a 2.7.6-3ubunt amd64        GObject based library to access u
+ii  libunistring2: 0.9.9-0ubunt amd64        Unicode string library for C
+ii  libunity-proto 7.1.4+18.04. amd64        binding to get places into the la
+ii  libunity-scope 7.1.4+18.04. all          binding to get places into the la
+ii  libunity9:amd6 7.1.4+18.04. amd64        binding to get places into the la
+ii  libunwind8:amd 1.2.1-8      amd64        library to determine the call-cha
+ii  libupower-glib 0.99.7-2ubun amd64        abstraction for power management 
+ii  liburi-perl    1.73-1       all          module to manipulate and access U
+ii  libusb-1.0-0:a 2:1.0.21-2   amd64        userspace USB programming library
+ii  libusbmuxd4:am 1.1.0~git201 amd64        USB multiplexor daemon for iPhone
+ii  libuuid1:amd64 2.31.1-0.4ub amd64        Universally Unique ID library
+ii  libv4l-0:amd64 1.14.2-1     amd64        Collection of video4linux support
+ii  libv4lconvert0 1.14.2-1     amd64        Video4linux frame format conversi
+ii  libvisio-0.1-1 0.1.6-1build amd64        library for parsing the visio fil
+ii  libvisual-0.4- 0.4.0-11     amd64        audio visualization framework
+ii  libvncclient1: 0.9.11+dfsg- amd64        API to write one's own VNC server
+ii  libvolume-key1 0.3.9-4      amd64        Library for manipulating storage 
+ii  libvorbis0a:am 1.3.5-4.2    amd64        decoder library for Vorbis Genera
+ii  libvorbisenc2: 1.3.5-4.2    amd64        encoder library for Vorbis Genera
+ii  libvorbisfile3 1.3.5-4.2    amd64        high-level API for Vorbis General
+ii  libvpx5:amd64  1.7.0-3ubunt amd64        VP8 and VP9 video codec (shared l
+ii  libvte-2.91-0: 0.52.2-1ubun amd64        Terminal emulator widget for GTK+
+ii  libvte-2.91-co 0.52.2-1ubun all          Terminal emulator widget for GTK+
+ii  libwacom-bin   0.29-1       amd64        Wacom model feature query library
+ii  libwacom-commo 0.29-1       all          Wacom model feature query library
+ii  libwacom2:amd6 0.29-1       amd64        Wacom model feature query library
+ii  libwavpack1:am 5.1.0-2ubunt amd64        audio codec (lossy and lossless) 
+ii  libwayland-cli 1.16.0-1ubun amd64        wayland compositor infrastructure
+ii  libwayland-cur 1.16.0-1ubun amd64        wayland compositor infrastructure
+ii  libwayland-egl 1.16.0-1ubun amd64        wayland compositor infrastructure
+ii  libwayland-egl 20.0.8-0ubun amd64        transitional dummy package
+ii  libwayland-ser 1.16.0-1ubun amd64        wayland compositor infrastructure
+ii  libwbclient0:a 2:4.7.6+dfsg amd64        Samba winbind client library
+ii  libwebkit2gtk- 2.32.4-0ubun amd64        Web content engine library for GT
+ii  libwebp6:amd64 0.6.1-2ubunt amd64        Lossy compression of digital phot
+ii  libwebpdemux2: 0.6.1-2ubunt amd64        Lossy compression of digital phot
+ii  libwebpmux3:am 0.6.1-2ubunt amd64        Lossy compression of digital phot
+ii  libwebrtc-audi 0.3-1        amd64        AudioProcessing module from the W
+ii  libwhoopsie-pr 0.19         amd64        Ubuntu error tracker submission s
+ii  libwhoopsie0:a 0.2.62ubuntu amd64        Ubuntu error tracker submission -
+ii  libwind0-heimd 7.5.0+dfsg-1 amd64        Heimdal Kerberos - stringprep imp
+ii  libwinpr2-2:am 2.2.0+dfsg1- amd64        Windows Portable Runtime library
+ii  libwmf0.2-7:am 0.2.8.4-12   amd64        Windows metafile conversion libra
+ii  libwmf0.2-7-gt 0.2.8.4-12   amd64        Windows metafile conversion libra
+ii  libwnck-3-0:am 3.24.1-2     amd64        Window Navigator Construction Kit
+ii  libwnck-3-comm 3.24.1-2     all          Window Navigator Construction Kit
+ii  libwoff1:amd64 1.0.2-1build amd64        library for converting fonts to W
+ii  libwpd-0.10-10 0.10.2-2     amd64        Library for handling WordPerfect 
+ii  libwpg-0.3-3:a 0.3.1-3      amd64        WordPerfect graphics import/conve
+ii  libwps-0.4-4:a 0.4.8-1      amd64        Works text file format import fil
+ii  libwrap0:amd64 7.6.q-27     amd64        Wietse Venema's TCP wrappers libr
+ii  libwww-perl    6.31-1ubuntu all          simple and consistent interface t
+ii  libwww-robotru 6.01-1       all          database of robots.txt-derived pe
+ii  libx11-6:amd64 2:1.6.4-3ubu amd64        X11 client-side library
+ii  libx11-data    2:1.6.4-3ubu all          X11 client-side library
+ii  libx11-protoco 0.56-7       all          Perl module for the X Window Syst
+ii  libx11-xcb1:am 2:1.6.4-3ubu amd64        Xlib/XCB interface library
+ii  libxapian30:am 1.4.5-1ubunt amd64        Search engine library
+ii  libxatracker2: 20.0.8-0ubun amd64        X acceleration library -- runtime
+ii  libxau6:amd64  1:1.0.8-1ubu amd64        X11 authorisation library
+ii  libxaw7:amd64  2:1.0.13-1   amd64        X11 Athena Widget library
+ii  libxcb-dri2-0: 1.13-2~ubunt amd64        X C Binding, dri2 extension
+ii  libxcb-dri3-0: 1.13-2~ubunt amd64        X C Binding, dri3 extension
+ii  libxcb-glx0:am 1.13-2~ubunt amd64        X C Binding, glx extension
+ii  libxcb-icccm4: 0.4.1-1ubunt amd64        utility libraries for X C Binding
+ii  libxcb-image0: 0.4.0-1build amd64        utility libraries for X C Binding
+ii  libxcb-keysyms 0.4.0-1      amd64        utility libraries for X C Binding
+ii  libxcb-present 1.13-2~ubunt amd64        X C Binding, present extension
+ii  libxcb-randr0: 1.13-2~ubunt amd64        X C Binding, randr extension
+ii  libxcb-render- 0.3.9-1      amd64        utility libraries for X C Binding
+ii  libxcb-render0 1.13-2~ubunt amd64        X C Binding, render extension
+ii  libxcb-res0:am 1.13-2~ubunt amd64        X C Binding, res extension
+ii  libxcb-shape0: 1.13-2~ubunt amd64        X C Binding, shape extension
+ii  libxcb-shm0:am 1.13-2~ubunt amd64        X C Binding, shm extension
+ii  libxcb-sync1:a 1.13-2~ubunt amd64        X C Binding, sync extension
+ii  libxcb-util1:a 0.4.0-0ubunt amd64        utility libraries for X C Binding
+ii  libxcb-xfixes0 1.13-2~ubunt amd64        X C Binding, xfixes extension
+ii  libxcb-xkb1:am 1.13-2~ubunt amd64        X C Binding, XKEYBOARD extension
+ii  libxcb-xv0:amd 1.13-2~ubunt amd64        X C Binding, xv extension
+ii  libxcb1:amd64  1.13-2~ubunt amd64        X C Binding
+ii  libxcomposite1 1:0.4.4-2    amd64        X11 Composite extension library
+ii  libxcursor1:am 1:1.1.15-1   amd64        X cursor management library
+ii  libxdamage1:am 1:1.1.4-3    amd64        X11 damaged region extension libr
+ii  libxdmcp6:amd6 1:1.1.2-3    amd64        X11 Display Manager Control Proto
+ii  libxext6:amd64 2:1.3.3-1    amd64        X11 miscellaneous extension libra
+ii  libxfixes3:amd 1:5.0.3-1    amd64        X11 miscellaneous 'fixes' extensi
+ii  libxfont2:amd6 1:2.0.3-1    amd64        X11 font rasterisation library
+ii  libxft2:amd64  2.3.2-1      amd64        FreeType-based font drawing libra
+ii  libxi6:amd64   2:1.7.9-1    amd64        X11 Input extension library
+ii  libxinerama1:a 2:1.1.3-1    amd64        X11 Xinerama extension library
+ii  libxkbcommon-x 0.8.2-1~ubun amd64        library to create keymaps with th
+ii  libxkbcommon0: 0.8.2-1~ubun amd64        library interface to the XKB comp
+ii  libxkbfile1:am 1:1.0.9-2    amd64        X11 keyboard file manipulation li
+ii  libxklavier16: 5.4-3        amd64        X Keyboard Extension high-level A
+ii  libxml-libxml- 2.0128+dfsg- amd64        Perl interface to the libxml2 lib
+ii  libxml-namespa 1.12-1       all          Perl module for supporting simple
+ii  libxml-parser- 2.44-2build3 amd64        Perl module for parsing XML files
+ii  libxml-sax-bas 1.09-1       all          base class for SAX drivers and fi
+ii  libxml-sax-exp 0.40-2       all          Perl module for a SAX2 driver for
+ii  libxml-sax-per 0.99+dfsg-2u all          Perl module for using and buildin
+ii  libxml-simple- 2.24-1       all          Perl module for reading and writi
+ii  libxml-twig-pe 1:3.50-1     all          Perl module for processing huge X
+ii  libxml-xpathen 0.14-1       all          re-usable XPath engine for DOM-li
+ii  libxml2:amd64  2.9.4+dfsg1- amd64        GNOME XML library
+ii  libxmlb1:amd64 0.1.8-1~ubun amd64        Binary XML library
+ii  libxmlsec1:amd 1.2.25-1buil amd64        XML security library
+ii  libxmlsec1-nss 1.2.25-1buil amd64        Nss engine for the XML security l
+ii  libxmu6:amd64  2:1.1.2-2    amd64        X11 miscellaneous utility library
+ii  libxmuu1:amd64 2:1.1.2-2    amd64        X11 miscellaneous micro-utility l
+ii  libxpm4:amd64  1:3.5.12-1   amd64        X11 pixmap library
+ii  libxrandr2:amd 2:1.5.1-1    amd64        X11 RandR extension library
+ii  libxrender1:am 1:0.9.10-1   amd64        X Rendering Extension client libr
+ii  libxres1:amd64 2:1.2.0-2    amd64        X11 Resource extension library
+ii  libxshmfence1: 1.3-1        amd64        X shared memory fences - shared l
+ii  libxslt1.1:amd 1.1.29-5ubun amd64        XSLT 1.0 processing library - run
+ii  libxss1:amd64  1:1.2.2-1    amd64        X11 Screen Saver extension librar
+ii  libxt6:amd64   1:1.1.5-1    amd64        X11 toolkit intrinsics library
+ii  libxtables12:a 1.6.1-2ubunt amd64        netfilter xtables library
+ii  libxtst6:amd64 2:1.2.3-1    amd64        X11 Testing -- Record extension l
+ii  libxv1:amd64   2:1.0.11-1   amd64        X11 Video extension library
+ii  libxvmc1:amd64 2:1.0.10-1   amd64        X11 Video extension library
+ii  libxxf86dga1:a 2:1.1.4-1    amd64        X11 Direct Graphics Access extens
+ii  libxxf86vm1:am 1:1.1.4-1    amd64        X11 XFree86 video mode extension 
+ii  libyajl2:amd64 2.1.0-2build amd64        Yet Another JSON Library
+ii  libyaml-0-2:am 0.1.7-2ubunt amd64        Fast YAML 1.1 parser and emitter 
+ii  libyaml-libyam 0.69+repack- amd64        Perl interface to libyaml, a YAML
+ii  libyelp0:amd64 3.26.0-1ubun amd64        Library for the GNOME help browse
+ii  libzeitgeist-2 1.0-0.1ubunt amd64        library to access Zeitgeist - sha
+ii  libzstd1:amd64 1.3.3+dfsg-2 amd64        fast lossless compression algorit
+ii  light-themes   16.10+18.04. all          Light Themes (Ambiance and Radian
+ii  lintian        2.5.81ubuntu all          Debian package checker
+ii  linux-base     4.5ubuntu1.2 all          Linux image base package
+ii  linux-firmware 1.173.19     all          Firmware for Linux kernel drivers
+ii  linux-generic- 5.4.0.87.98~ amd64        Complete Generic Linux kernel and
+ii  linux-headers- 5.4.0-42.46~ amd64        Linux kernel headers for version 
+ii  linux-headers- 5.4.0-87.98~ amd64        Linux kernel headers for version 
+ii  linux-headers- 5.4.0.87.98~ amd64        Generic Linux kernel headers
+ii  linux-hwe-5.4- 5.4.0-42.46~ all          Header files related to Linux ker
+ii  linux-hwe-5.4- 5.4.0-87.98~ all          Header files related to Linux ker
+ii  linux-image-5. 5.4.0-42.46~ amd64        Signed kernel image generic
+ii  linux-image-5. 5.4.0-87.98~ amd64        Signed kernel image generic
+ii  linux-image-ge 5.4.0.87.98~ amd64        Generic Linux kernel image
+ii  linux-libc-dev 4.15.0-159.1 amd64        Linux Kernel Headers for developm
+ii  linux-modules- 5.4.0-42.46~ amd64        Linux kernel extra modules for ve
+ii  linux-modules- 5.4.0-87.98~ amd64        Linux kernel extra modules for ve
+ii  linux-modules- 5.4.0-42.46~ amd64        Linux kernel extra modules for ve
+ii  linux-modules- 5.4.0-87.98~ amd64        Linux kernel extra modules for ve
+ii  linux-sound-ba 1.0.25+dfsg- all          base package for ALSA and OSS sou
+ii  locales        2.27-3ubuntu all          GNU C Library: National Language 
+ii  login          1:4.5-1ubunt amd64        system login tools
+ii  logrotate      3.11.0-0.1ub amd64        Log rotation utility
+ii  lp-solve       5.5.0.15-4bu amd64        Solve (mixed integer) linear prog
+ii  lsb-base       9.20170808ub all          Linux Standard Base init script f
+ii  lsb-release    9.20170808ub all          Linux Standard Base version repor
+ii  lshw           02.18-0.1ubu amd64        information about hardware config
+ii  lsof           4.89+dfsg-0. amd64        Utility to list open files
+ii  ltrace         0.7.3-6ubunt amd64        Tracks runtime library calls in d
+ii  make           4.1-9.1ubunt amd64        utility for directing compilation
+ii  man-db         2.8.3-2ubunt amd64        on-line manual pager
+ii  manpages       4.15-1       all          Manual pages about using a GNU/Li
+ii  manpages-dev   4.15-1       all          Manual pages about using GNU/Linu
+ii  mawk           1.3.3-17ubun amd64        a pattern scanning and text proce
+ii  media-player-i 23-1         all          Media player identification files
+ii  memtest86+     5.01-3ubuntu amd64        thorough real-mode memory tester
+ii  mime-support   3.60ubuntu1  all          MIME files 'mime.types' & 'mailca
+ii  mlocate        0.26-2ubuntu amd64        quickly find files on the filesys
+ii  mobile-broadba 20170903-1   all          database of mobile broadband serv
+ii  modemmanager   1.10.0-1~ubu amd64        D-Bus service for managing modems
+ii  mount          2.31.1-0.4ub amd64        tools for mounting and manipulati
+ii  mousetweaks    3.12.0-4     amd64        mouse accessibility enhancements 
+ii  mscompress     0.4-3build1  amd64        Microsoft "compress.exe/expand.ex
+ii  mtools         4.0.18-2ubun amd64        Tools for manipulating MSDOS file
+ii  mtr-tiny       0.92-1       amd64        Full screen ncurses traceroute to
+ii  multiarch-supp 2.27-3ubuntu amd64        Transitional package to ensure mu
+ii  mutter         3.28.4-0ubun amd64        lightweight GTK+ window manager
+ii  mutter-common  3.28.4-0ubun all          shared files for the Mutter windo
+ii  mythes-en-us   1:6.0.3-3    all          English (USA) Thesaurus for Libre
+ii  nano           2.9.3-2      amd64        small, friendly text editor inspi
+ii  nautilus       1:3.26.4-0~u amd64        file manager and graphical shell 
+ii  nautilus-data  1:3.26.4-0~u all          data files for nautilus
+ii  nautilus-exten 3.28.2-1ubun amd64        GNOME terminal emulator applicati
+ii  nautilus-sendt 3.8.6-2      amd64        easily send files via email from 
+ii  nautilus-share 0.7.3-2ubunt amd64        Nautilus extension to share folde
+ii  ncurses-base   6.1-1ubuntu1 all          basic terminal type definitions
+ii  ncurses-bin    6.1-1ubuntu1 amd64        terminal-related programs and man
+ii  netbase        5.4          all          Basic TCP/IP networking system
+ii  netcat-openbsd 1.187-1ubunt amd64        TCP/IP swiss army knife
+ii  netpbm         2:10.0-15.3b amd64        Graphics conversion tools between
+ii  netplan.io     0.99-0ubuntu amd64        YAML network configuration abstra
+ii  network-manage 1.10.6-2ubun amd64        network management framework (dae
+ii  network-manage 1.10.6-2ubun all          NetworkManager configuration to e
+ii  network-manage 1.8.10-2ubun amd64        network management framework (GNO
+ii  network-manage 1.2.6-1      amd64        network management framework (PPT
+ii  network-manage 1.2.6-1      amd64        network management framework (PPT
+ii  networkd-dispa 1.7-0ubuntu3 all          Dispatcher service for systemd-ne
+ii  notification-d 3.20.0-3     amd64        daemon for displaying passive pop
+ii  nplan          0.99-0ubuntu all          YAML network configuration abstra
+ii  ntfs-3g        1:2017.3.23- amd64        read/write NTFS driver for FUSE
+ii  openprinting-p 20180306-1   all          OpenPrinting printer support - Po
+ii  openssh-client 1:7.6p1-4ubu amd64        secure shell (SSH) client, for se
+ii  openssl        1.1.1-1ubunt amd64        Secure Sockets Layer toolkit - cr
+ii  orca           3.28.0-3ubun all          Scriptable screen reader
+ii  os-prober      1.74ubuntu1  amd64        utility to detect other OSes on a
+ii  p11-kit        0.23.9-2ubun amd64        p11-glue utilities
+ii  p11-kit-module 0.23.9-2ubun amd64        p11-glue proxy and trust modules
+ii  packagekit     1.1.9-1ubunt amd64        Provides a package management ser
+ii  packagekit-too 1.1.9-1ubunt amd64        Provides PackageKit command-line 
+ii  parted         3.2-20ubuntu amd64        disk partition manipulator
+ii  passwd         1:4.5-1ubunt amd64        change and administer password an
+ii  patch          2.7.6-2ubunt amd64        Apply a diff file to an original
+ii  patchutils     0.3.4-2      amd64        Utilities to work with patches
+ii  pciutils       1:3.5.2-1ubu amd64        Linux PCI Utilities
+ii  pcmciautils    018-8build1  amd64        PCMCIA utilities for Linux 2.6
+ii  perl           5.26.1-6ubun amd64        Larry Wall's Practical Extraction
+ii  perl-base      5.26.1-6ubun amd64        minimal Perl system
+ii  perl-modules-5 5.26.1-6ubun all          Core Perl modules
+ii  perl-openssl-d 3build1      amd64        version compatibility baseline fo
+ii  pinentry-curse 1.1.0-1      amd64        curses-based PIN or pass-phrase e
+ii  pinentry-gnome 1.1.0-1      amd64        GNOME 3 PIN or pass-phrase entry 
+ii  plymouth       0.9.3-1ubunt amd64        boot animation, logger and I/O mu
+ii  plymouth-label 0.9.3-1ubunt amd64        boot animation, logger and I/O mu
+ii  plymouth-theme 0.9.3-1ubunt amd64        boot animation, logger and I/O mu
+ii  plymouth-theme 0.9.3-1ubunt amd64        boot animation, logger and I/O mu
+ii  policykit-1    0.105-20ubun amd64        framework for managing administra
+ii  policykit-desk 0.20ubuntu18 all          run common desktop actions withou
+ii  poppler-data   0.4.8-2      all          encoding data for the poppler PDF
+ii  poppler-utils  0.62.0-2ubun amd64        PDF utilities (based on Poppler)
+ii  popularity-con 1.66ubuntu1  all          Vote for your favourite packages 
+ii  powermgmt-base 1.33         all          common utils for power management
+ii  ppp            2.4.7-2+2ubu amd64        Point-to-Point Protocol (PPP) - d
+ii  pppconfig      2.3.23       all          Text menu based utility for confi
+ii  pppoeconf      1.21ubuntu1  all          configures PPPoE/ADSL connections
+ii  pptp-linux     1.9.0+ds-2   amd64        Point-to-Point Tunneling Protocol
+ii  printer-driver 4-1          amd64        printer driver for (some) Brother
+ii  printer-driver 27-4         amd64        printer driver for Kodak ESP AiO 
+ii  printer-driver 20170320dfsg amd64        printer driver for ZjStream-based
+ii  printer-driver 20170320dfsg all          printer driver for ZjStream-based
+ii  printer-driver 5.2.13-2     amd64        printer drivers for CUPS
+ii  printer-driver 3.17.10+repa amd64        HP Linux Printing and Imaging - C
+ii  printer-driver 0.51-13      amd64        printer driver for Minolta magico
+ii  printer-driver 0.0.9-10     amd64        printer driver for KonicaMinolta 
+ii  printer-driver 1.13+nondbs- amd64        printer driver for HP-GDI printer
+ii  printer-driver 3.17.10+repa all          HP Printers PostScript Descriptio
+ii  printer-driver 1.4.2-3      amd64        printer driver Brother P-touch la
+ii  printer-driver 1.4+repack0- amd64        printer driver for HP Color Laser
+ii  printer-driver 0.1-5        all          printer driver for Ricoh Aficio S
+ii  printer-driver 2.0.0+svn315 amd64        Driver for Samsung and Xerox SPL2
+ii  procps         2:3.3.12-3ub amd64        /proc file system utilities
+ii  psmisc         23.1-1ubuntu amd64        utilities that use the proc file 
+ii  publicsuffix   20180223.131 all          accurate, machine-readable list o
+ii  pulseaudio     1:11.1-1ubun amd64        PulseAudio sound server
+ii  pulseaudio-mod 1:11.1-1ubun amd64        Bluetooth module for PulseAudio s
+ii  pulseaudio-uti 1:11.1-1ubun amd64        Command line tools for the PulseA
+ii  python         2.7.15~rc1-1 amd64        interactive high-level object-ori
+ii  python-all     2.7.15~rc1-1 amd64        package depending on all supporte
+ii  python-all-dev 2.7.15~rc1-1 amd64        package depending on all supporte
+ii  python-apt-com 1.6.5ubuntu0 all          Python interface to libapt-pkg (l
+ii  python-asn1cry 0.24.0-1     all          Fast ASN.1 parser and serializer 
+ii  python-cffi-ba 1.11.5-1     amd64        Foreign Function Interface for Py
+ii  python-crypto  2.6.1-8ubunt amd64        cryptographic algorithms and prot
+ii  python-cryptog 2.1.4-1ubunt amd64        Python library exposing cryptogra
+ii  python-dbus    1.2.6-1      amd64        simple interprocess messaging sys
+ii  python-dev     2.7.15~rc1-1 amd64        header files and a static library
+ii  python-enum34  1.1.6-2      all          backport of Python 3.4's enum pac
+ii  python-gi      3.26.1-2ubun amd64        Python 2.x bindings for gobject-i
+ii  python-idna    2.6-1        all          Python IDNA2008 (RFC 5891) handli
+ii  python-ipaddre 1.0.17-1     all          Backport of Python 3 ipaddress mo
+ii  python-keyring 10.6.0-1     all          store and access your passwords s
+ii  python-keyring 3.0-1        all          alternate backend implementations
+ii  python-minimal 2.7.15~rc1-1 amd64        minimal subset of the Python lang
+ii  python-pip     9.0.1-2.3~ub all          Python package installer
+ii  python-pip-whl 9.0.1-2.3~ub all          Python package installer
+ii  python-pkg-res 39.0.1-2     all          Package Discovery and Resource Ac
+ii  python-secrets 2.3.1-2      all          Python module for storing secrets
+ii  python-setupto 39.0.1-2     all          Python Distutils Enhancements
+ii  python-six     1.11.0-2     all          Python 2 and 3 compatibility libr
+ii  python-talloc  2.1.10-2ubun amd64        hierarchical pool based memory al
+ii  python-tk      2.7.17-1~18. amd64        Tkinter - Writing Tk applications
+ii  python-wheel   0.30.0-0.2   all          built-package format for Python
+ii  python-xdg     0.25-4ubuntu all          Python 2 library to access freede
+ii  python2.7      2.7.17-1~18. amd64        Interactive high-level object-ori
+ii  python2.7-dev  2.7.17-1~18. amd64        Header files and a static library
+ii  python2.7-mini 2.7.17-1~18. amd64        Minimal subset of the Python lang
+ii  python3        3.6.7-1~18.0 amd64        interactive high-level object-ori
+ii  python3-apport 2.20.9-0ubun all          Python 3 library for Apport crash
+ii  python3-apt    1.6.5ubuntu0 amd64        Python 3 interface to libapt-pkg
+ii  python3-aptdae 1.1.1+bzr982 all          Python 3 module for the server an
+ii  python3-aptdae 1.1.1+bzr982 all          Python 3 GTK+ 3 widgets to run an
+ii  python3-asn1cr 0.24.0-1     all          Fast ASN.1 parser and serializer 
+ii  python3-brlapi 5.5-4ubuntu2 amd64        Braille display access via BRLTTY
+ii  python3-cairo: 1.16.2-1     amd64        Python3 bindings for the Cairo ve
+ii  python3-certif 2018.1.18-2  all          root certificates for validating 
+ii  python3-cffi-b 1.11.5-1     amd64        Foreign Function Interface for Py
+ii  python3-charde 3.0.4-1      all          universal character encoding dete
+ii  python3-comman 18.04.5      all          Python 3 bindings for command-not
+ii  python3-crypto 2.6.1-8ubunt amd64        cryptographic algorithms and prot
+ii  python3-crypto 2.1.4-1ubunt amd64        Python library exposing cryptogra
+ii  python3-cups   1.9.73-2     amd64        Python3 bindings for CUPS
+ii  python3-cupshe 1.5.11-1ubun all          Python utility modules around the
+ii  python3-dateut 2.6.1-1      all          powerful extensions to the standa
+ii  python3-dbus   1.2.6-1      amd64        simple interprocess messaging sys
+ii  python3-debcon 1.5.66ubuntu all          interact with debconf from Python
+ii  python3-debian 0.1.32       all          Python 3 modules to work with Deb
+ii  python3-defer  1.0.6-2build all          Small framework for asynchronous 
+ii  python3-distro 0.18ubuntu0. all          information about distributions' 
+ii  python3-distup 1:18.04.38   all          manage release upgrades
+ii  python3-gdbm:a 3.6.9-1~18.0 amd64        GNU dbm database support for Pyth
+ii  python3-gi     3.26.1-2ubun amd64        Python 3 bindings for gobject-int
+ii  python3-gi-cai 3.26.1-2ubun amd64        Python 3 Cairo bindings for the G
+ii  python3-httpli 0.9.2+dfsg-1 all          comprehensive HTTP client library
+ii  python3-idna   2.6-1        all          Python IDNA2008 (RFC 5891) handli
+ii  python3-keyrin 10.6.0-1     all          store and access your passwords s
+ii  python3-keyrin 3.0-1        all          alternate backend implementations
+ii  python3-launch 1.10.6-1     all          Launchpad web services client lib
+ii  python3-lazr.r 0.13.5-1     all          client for lazr.restful-based web
+ii  python3-lazr.u 1.0.3-2build all          library for parsing, manipulating
+ii  python3-louis  3.5.0-1ubunt all          Python bindings for liblouis
+ii  python3-macaro 1.1.3-1      all          Higher-level macaroon operations 
+ii  python3-mako   1.0.7+ds1-1  all          fast and lightweight templating f
+ii  python3-markup 1.0-1build1  amd64        HTML/XHTML/XML string library for
+ii  python3-minima 3.6.7-1~18.0 amd64        minimal subset of the Python lang
+ii  python3-nacl   1.1.2-1build amd64        Python bindings to libsodium (Pyt
+ii  python3-netifa 0.10.4-0.1bu amd64        portable network interface inform
+ii  python3-oauth  1.0.1-5      all          Python 3 library implementing of 
+ii  python3-olefil 0.45.1-1     all          Python module to read/write MS OL
+ii  python3-pexpec 4.2.1-1      all          Python 3 module for automating in
+ii  python3-pil:am 5.1.0-1ubunt amd64        Python Imaging Library (Python3)
+ii  python3-pkg-re 39.0.1-2     all          Package Discovery and Resource Ac
+ii  python3-proble 2.20.9-0ubun all          Python 3 library to handle proble
+ii  python3-protob 3.0.0-9.1ubu amd64        Python 3 bindings for protocol bu
+ii  python3-ptypro 0.5.2-1      all          Run a subprocess in a pseudo term
+ii  python3-pyatsp 2.26.0+dfsg- all          Assistive Technology Service Prov
+ii  python3-pymaca 0.13.0-1     all          Macaroon library for Python 3
+ii  python3-render 3.4.0-3ubunt amd64        python low level render interface
+ii  python3-report 3.4.0-3ubunt all          ReportLab library to create PDF d
+ii  python3-report 3.4.0-3ubunt amd64        C coded extension accelerator for
+ii  python3-reques 2.18.4-2ubun all          elegant and simple HTTP library f
+ii  python3-reques 0.1.5-3      all          Use requests to talk HTTP via a U
+ii  python3-rfc333 1.0-4        all          parser and generator of RFC 3339-
+ii  python3-secret 2.3.1-2      all          Python module for storing secrets
+ii  python3-simple 3.13.2-1     amd64        simple, fast, extensible JSON enc
+ii  python3-six    1.11.0-2     all          Python 2 and 3 compatibility libr
+ii  python3-softwa 0.96.24.32.1 all          manage the repositories that you 
+ii  python3-speech 0.8.8-1ubunt all          Python interface to Speech Dispat
+ii  python3-system 234-1build1  amd64        Python 3 bindings for systemd
+ii  python3-tz     2018.3-2     all          Python3 version of the Olson time
+ii  python3-uno    1:6.0.7-0ubu amd64        Python-UNO bridge
+ii  python3-update 1:18.04.11.1 all          python 3.x module for update-mana
+ii  python3-urllib 1.22-1ubuntu all          HTTP library with thread-safe con
+ii  python3-wadlli 1.3.2-3ubunt all          Python 3 library for navigating W
+ii  python3-xdg    0.25-4ubuntu all          Python 3 library to access freede
+ii  python3-xkit   0.5.0ubuntu2 all          library for the manipulation of x
+ii  python3-yaml   3.12-1build2 amd64        YAML parser and emitter for Pytho
+ii  python3-zope.i 4.3.2-1build amd64        Interfaces for Python3
+ii  python3.6      3.6.9-1~18.0 amd64        Interactive high-level object-ori
+ii  python3.6-mini 3.6.9-1~18.0 amd64        Minimal subset of the Python lang
+ii  qpdf           8.0.2-3ubunt amd64        tools for transforming and inspec
+ii  readline-commo 7.0-3        all          GNU readline and history librarie
+ii  remmina        1.2.0-rcgit. amd64        GTK+ Remote Desktop Client
+ii  remmina-common 1.2.0-rcgit. all          Common files for Remmina
+ii  remmina-plugin 1.2.0-rcgit. amd64        RDP plugin for Remmina
+ii  remmina-plugin 1.2.0-rcgit. amd64        Secret plugin for Remmina
+ii  remmina-plugin 1.2.0-rcgit. amd64        VNC plugin for Remmina
+ii  rfkill         2.31.1-0.4ub amd64        tool for enabling and disabling w
+ii  rhythmbox      3.4.2-4ubunt amd64        music player and organizer for GN
+ii  rhythmbox-data 3.4.2-4ubunt all          data files for rhythmbox
+ii  rhythmbox-plug 0.18.0-1     all          Enhanced play controls and interf
+ii  rhythmbox-plug 3.4.2-4ubunt amd64        plugins for rhythmbox music playe
+ii  rsync          3.1.2-2.1ubu amd64        fast, versatile, remote (and loca
+ii  rsyslog        8.32.0-1ubun amd64        reliable system and kernel loggin
+ii  rtkit          0.11-6       amd64        Realtime Policy and Watchdog Daem
+ii  samba-libs:amd 2:4.7.6+dfsg amd64        Samba core libraries
+ii  sane-utils     1.0.27-1~exp amd64        API library for scanners -- utili
+ii  sbsigntool     0.6-3.2ubunt amd64        Tools to manipulate signatures on
+ii  seahorse       3.20.0-5     amd64        GNOME front end for GnuPG
+ii  secureboot-db  1.4~ubuntu0. amd64        Secure Boot updates for DB and DB
+ii  sed            4.4-2        amd64        GNU stream editor for filtering/t
+ii  sensible-utils 0.0.12       all          Utilities for sensible alternativ
+ii  session-migrat 0.3.3        amd64        Tool to migrate in user session s
+ii  shared-mime-in 1.9-2        amd64        FreeDesktop.org shared MIME datab
+ii  shotwell       0.28.4-0ubun amd64        digital photo organizer
+ii  shotwell-commo 0.28.4-0ubun all          digital photo organizer - common 
+ii  simple-scan    3.28.0-0ubun amd64        Simple Scanning Utility
+ii  snapd          2.48.3+18.04 amd64        Daemon and tooling that enable sn
+ii  software-prope 0.96.24.32.1 all          manage the repositories that you 
+ii  software-prope 0.96.24.32.1 all          manage the repositories that you 
+ii  sound-icons    0.1-6        all          Sounds for speech enabled applica
+ii  sound-theme-fr 0.8-2ubuntu1 all          freedesktop.org sound theme
+ii  speech-dispatc 0.8.8-1ubunt amd64        Common interface to speech synthe
+ii  speech-dispatc 0.8.8-1ubunt amd64        Speech Dispatcher: Audio output p
+ii  speech-dispatc 0.8.8-1ubunt amd64        Speech Dispatcher: Espeak-ng outp
+ii  spice-vdagent  0.17.0-1ubun amd64        Spice agent for Linux
+ii  squashfs-tools 1:4.3-6ubunt amd64        Tool to create and append to squa
+ii  ssl-cert       1.0.39       all          simple debconf wrapper for OpenSS
+ii  strace         4.21-1ubuntu amd64        System call tracer
+ii  sudo           1.8.21p2-3ub amd64        Provide limited super user privil
+ii  syslinux       3:6.03+dfsg1 amd64        collection of bootloaders (DOS FA
+ii  syslinux-commo 3:6.03+dfsg1 all          collection of bootloaders (common
+ii  syslinux-legac 2:3.63+dfsg- amd64        Bootloader for Linux/i386 using M
+ii  system-config- 1.5.11-1ubun all          graphical interface to configure 
+ii  system-config- 1.5.11-1ubun all          backend and the translation files
+ii  system-config- 1.5.11-1ubun amd64        Utilities to detect and configure
+ii  systemd        237-3ubuntu1 amd64        system and service manager
+ii  systemd-sysv   237-3ubuntu1 amd64        system and service manager - SysV
+ii  sysvinit-utils 2.88dsf-59.1 amd64        System-V-like utilities
+ii  t1utils        1.41-2       amd64        Collection of simple Type 1 font 
+ii  tar            1.29b-2ubunt amd64        GNU version of the tar archiving 
+ii  tcpdump        4.9.3-0ubunt amd64        command-line network traffic anal
+ii  telnet         0.17-41      amd64        basic telnet client
+ii  thermald       1.7.0-5ubunt amd64        Thermal monitoring and controllin
+ii  thunderbird    1:78.13.0+bu amd64        Email, RSS and newsgroup client w
+ii  thunderbird-gn 1:78.13.0+bu amd64        Email, RSS and newsgroup client -
+ii  thunderbird-lo 1:78.13.0+bu amd64        English language pack for Thunder
+ii  thunderbird-lo 1:78.13.0+bu all          Transitional English language pac
+ii  time           1.7-25.1buil amd64        GNU time program for measuring CP
+ii  tk8.6-blt2.5   2.5.3+dfsg-4 amd64        graphics extension library for Tc
+ii  totem          3.26.0-0ubun amd64        Simple media player for the GNOME
+ii  totem-common   3.26.0-0ubun all          Data files for the Totem media pl
+ii  totem-plugins  3.26.0-0ubun amd64        Plugins for the Totem media playe
+ii  transmission-c 2.92-3ubuntu all          lightweight BitTorrent client (co
+ii  transmission-g 2.92-3ubuntu amd64        lightweight BitTorrent client (GT
+ii  tzdata         2021a-2ubunt all          time zone and daylight-saving tim
+ii  ubuntu-advanta 17           all          management tools for Ubuntu Advan
+ii  ubuntu-artwork 1:16.10+18.0 all          Ubuntu themes and artwork
+ii  ubuntu-desktop 1.417.4      amd64        The Ubuntu desktop system
+ii  ubuntu-docs    18.04.4      all          Ubuntu Desktop Guide
+ii  ubuntu-drivers 1:0.5.2.5    amd64        Detect and install additional Ubu
+ii  ubuntu-keyring 2018.09.18.1 all          GnuPG keys of the Ubuntu archive
+ii  ubuntu-minimal 1.417.4      amd64        Minimal core of Ubuntu
+ii  ubuntu-mono    16.10+18.04. all          Ubuntu Mono Icon theme
+ii  ubuntu-release 1:18.04.38   all          manage release upgrades
+ii  ubuntu-release 1:18.04.38   all          manage release upgrades
+ii  ubuntu-report  1.3.2        amd64        Report hardware and other collect
+ii  ubuntu-session 3.28.1-0ubun amd64        Ubuntu session with GNOME Shell
+ii  ubuntu-setting 18.04.7      all          default settings for the Ubuntu d
+ii  ubuntu-softwar 3.28.1-0ubun all          Utility for browsing, installing,
+ii  ubuntu-sounds  0.13         all          Ubuntu's GNOME audio theme
+ii  ubuntu-standar 1.417.4      amd64        The Ubuntu standard system
+ii  ubuntu-system- 0.3.1        all          Dbus service to set various syste
+ii  ubuntu-wallpap 18.04.1-0ubu all          Ubuntu Wallpapers
+ii  ubuntu-wallpap 18.04.1-0ubu all          Ubuntu 18.04 Wallpapers
+ii  ubuntu-web-lau 18.04.7      all          obsolete packackage
+ii  ucf            3.0038       all          Update Configuration File(s): pre
+ii  udev           237-3ubuntu1 amd64        /dev/ and hotplug management daem
+ii  udisks2        2.7.6-3ubunt amd64        D-Bus service to access and manip
+ii  ufw            0.36-0ubuntu all          program for managing a Netfilter 
+ii  unattended-upg 1.1ubuntu1.1 all          automatic installation of securit
+ii  uno-libs3      6.0.7-0ubunt amd64        LibreOffice UNO runtime environme
+ii  unzip          6.0-21ubuntu amd64        De-archiver for .zip files
+ii  update-inetd   4.44         all          inetd configuration file updater
+ii  update-manager 1:18.04.11.1 all          GNOME application that manages ap
+ii  update-manager 1:18.04.11.1 all          manage release upgrades
+ii  update-notifie 3.192.1.7    amd64        Daemon which notifies about packa
+ii  update-notifie 3.192.1.7    all          Files shared between update-notif
+ii  upower         0.99.7-2ubun amd64        abstraction for power management
+ii  ure            6.0.7-0ubunt amd64        LibreOffice UNO runtime environme
+ii  ureadahead     0.100.0-21   amd64        Read required files in advance
+ii  usb-creator-co 0.3.5ubuntu1 amd64        create a startup disk using a CD 
+ii  usb-creator-gt 0.3.5ubuntu1 amd64        create a startup disk using a CD 
+ii  usb-modeswitch 2.5.2+repack amd64        mode switching tool for controlli
+ii  usb-modeswitch 20170806-2   all          mode switching data for usb-modes
+ii  usbmuxd        1.1.0-2ubunt amd64        USB multiplexor daemon for iPhone
+ii  usbutils       1:007-4build amd64        Linux USB utilities
+ii  util-linux     2.31.1-0.4ub amd64        miscellaneous system utilities
+ii  uuid-runtime   2.31.1-0.4ub amd64        runtime components for the Univer
+ii  vim-common     2:8.0.1453-1 all          Vi IMproved - Common files
+ii  vim-tiny       2:8.0.1453-1 amd64        Vi IMproved - enhanced vi editor 
+ii  vino           3.22.0-3ubun amd64        VNC server for GNOME
+ii  wamerican      2017.08.24-1 all          American English dictionary words
+ii  wbritish       2017.08.24-1 all          British English dictionary words 
+ii  wget           1.19.4-1ubun amd64        retrieves files from the web
+ii  whiptail       0.52.20-1ubu amd64        Displays user-friendly dialog box
+ii  whoopsie       0.2.62ubuntu amd64        Ubuntu error tracker submission
+ii  whoopsie-prefe 0.19         amd64        System preferences for error repo
+ii  wireless-regdb 2021.08.28-0 all          wireless regulatory database
+ii  wireless-tools 30~pre9-12ub amd64        Tools for manipulating Linux Wire
+ii  wpasupplicant  2:2.6-15ubun amd64        client support for WPA and WPA2 (
+ii  x11-apps       7.7+6ubuntu1 amd64        X applications
+ii  x11-common     1:7.7+19ubun all          X Window System (X.Org) infrastru
+ii  x11-session-ut 7.7+2build1  amd64        X session utilities
+ii  x11-utils      7.7+3build1  amd64        X11 utilities
+ii  x11-xkb-utils  7.7+3ubuntu0 amd64        X11 XKB utilities
+ii  x11-xserver-ut 7.7+7build1  amd64        X server utilities
+ii  xauth          1:1.0.10-1   amd64        X authentication utility
+ii  xbitmaps       1.1.1-2      all          Base X bitmaps
+ii  xbrlapi        5.5-4ubuntu2 amd64        Access software for a blind perso
+ii  xcursor-themes 1.0.4-1      all          Base X cursor themes
+ii  xdg-desktop-po 1.0.3-0ubunt amd64        desktop integration portal for Fl
+ii  xdg-desktop-po 1.0.2-0ubunt amd64        GTK+/GNOME portal backend for xdg
+ii  xdg-user-dirs  0.17-1ubuntu amd64        tool to manage well known user di
+ii  xdg-user-dirs- 0.10-2       amd64        tool to manage well known user di
+ii  xdg-utils      1.1.2-1ubunt all          desktop integration utilities fro
+ii  xfonts-base    1:1.0.4+nmu1 all          standard fonts for X
+ii  xfonts-encodin 1:1.0.4-2    all          Encodings for X.Org fonts
+ii  xfonts-scalabl 1:1.0.3-1.1  all          scalable fonts for X
+ii  xfonts-utils   1:7.7+6      amd64        X Window System font utility prog
+ii  xinit          1.3.4-3ubunt amd64        X server initialisation tool
+ii  xinput         1.6.2-1build amd64        Runtime configuration and test of
+ii  xkb-data       2.23.1-1ubun all          X Keyboard Extension (XKB) config
+ii  xorg           1:7.7+19ubun amd64        X.Org X Window System
+ii  xorg-docs-core 1:1.7.1-1.1  all          Core documentation for the X.org 
+ii  xserver-common 2:1.19.6-1ub all          common files used by various X se
+ii  xserver-xephyr 2:1.19.6-1ub amd64        nested X server
+ii  xserver-xorg-c 2:1.20.8-2ub amd64        Xorg X server - core server
+ii  xserver-xorg-h 1:7.7+19ubun amd64        X.Org X server
+ii  xserver-xorg-i 1:7.7+19ubun amd64        X.Org X server -- input driver me
+ii  xserver-xorg-i 0.28.1-1~18. amd64        X.Org X server -- libinput input 
+ii  xserver-xorg-i 1:0.36.1-0ub amd64        X.Org X server -- Wacom input dri
+ii  xserver-xorg-l 2:1.20.8-2ub amd64        setuid root Xorg server wrapper
+ii  xserver-xorg-v 1:7.7+19ubun amd64        X.Org X server -- output driver m
+ii  xserver-xorg-v 19.1.0-1~18. amd64        X.Org X server -- AMDGPU display 
+ii  xserver-xorg-v 1:19.1.0-1~1 amd64        X.Org X server -- AMD/ATI display
+ii  xserver-xorg-v 1:0.5.0-1ubu amd64        X.Org X server -- fbdev display d
+ii  xserver-xorg-v 2:2.99.917+g amd64        X.Org X server -- Intel i8xx, i9x
+ii  xserver-xorg-v 1:1.0.16-1~1 amd64        X.Org X server -- Nouveau display
+ii  xserver-xorg-v 0.1.5-2build amd64        X.Org X server -- QXL display dri
+ii  xserver-xorg-v 1:19.1.0-1~1 amd64        X.Org X server -- AMD/ATI Radeon 
+ii  xserver-xorg-v 1:2.4.0-1~18 amd64        X.Org X server -- VESA display dr
+ii  xserver-xorg-v 1:13.3.0-2bu amd64        X.Org X server -- VMware display 
+ii  xul-ext-ubufox 3.4-0ubuntu1 all          Ubuntu modifications for Firefox
+ii  xwayland       2:1.19.6-1ub amd64        Xwayland X server
+ii  xxd            2:8.0.1453-1 amd64        tool to make (or reverse) a hex d
+ii  xz-utils       5.2.2-1.3    amd64        XZ-format compression utilities
+ii  yelp           3.26.0-1ubun amd64        Help browser for GNOME
+ii  yelp-xsl       3.20.1-4     all          XSL stylesheets for the yelp help
+ii  zeitgeist-core 1.0-0.1ubunt amd64        event logging framework - engine
+ii  zenity         3.28.1-1     amd64        Display graphical dialog boxes fr
+ii  zenity-common  3.28.1-1     all          Display graphical dialog boxes fr
+ii  zip            3.0-11build1 amd64        Archiver for .zip files
+ii  zlib1g:amd64   1:1.2.11.dfs amd64        compression library - runtime
+ubuntu@ubuntu-virtual-machine:/usr/bin$ 
+
