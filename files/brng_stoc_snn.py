@@ -235,7 +235,7 @@ end     = time.time()
 #------------------------------------------------------------------------------
 # Set parameters and equations
 #------------------------------------------------------------------------------
-import brian_no_units  #import it to deactivate unit checking --> This should NOT be done for testing/debugging
+#import brian_no_units  #import it to deactivate unit checking --> This should NOT be done for testing/debugging
 import brian as b
 from   brian import *
 import math
