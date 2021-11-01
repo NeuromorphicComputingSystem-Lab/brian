@@ -17,7 +17,7 @@ from struct import unpack
 from brian import *
 
 # specify the location of the MNIST data
-MNIST_data_path = ''
+MNIST_data_path = './MNIST/'
 
 #------------------------------------------------------------------------------ 
 # functions
