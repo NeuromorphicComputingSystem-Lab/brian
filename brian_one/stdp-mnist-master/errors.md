@@ -1,6 +1,8 @@
 # errors
 
 ## 2021-10-31
+
+### b.run() error, g++ command error
 ```
 time needed to load test set: 4.91647481918
 brian.stateupdater: WARNING  Using codegen CStateUpdater
@@ -102,6 +104,7 @@ x86_64-linux-gnu-g++: error: unrecognized command line option ‘-ffast-math -ma
 ```
 
 
+### random connection result
 
 ```
 ubuntu@ubuntu-virtual-machine:~/Desktop/brian/brian_one/stdp-mnist-master$ python Diehl\&Cook_MNIST_random_conn_generator.py 
@@ -116,7 +119,7 @@ save connection matrix AiAe
 ```
 
 
-
+### b.run() error, g++ command error
 
 ```
 time needed to load test set: 4.91405200958
@@ -167,6 +170,8 @@ x86_64-linux-gnu-g++: error: unrecognized command line option ‘-ffast-math -ma
 ```
 
 
+
+### when gcc, g++ doesn't exist
 
 ```
 brian.experimental.codegen.stateupdaters: WARNING  C compilation failed, falling back on Python.
