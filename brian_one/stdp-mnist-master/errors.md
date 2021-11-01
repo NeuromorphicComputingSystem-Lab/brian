@@ -205,3 +205,37 @@ weave.build_tools.CompileError: error: Command "x86_64-linux-gnu-g++ -pthread -f
 
 ```
 
+
+
+
+### after installing gcc/g++ compiler 5
+
+```
+brian.experimental.codegen.stateupdaters: WARNING  C compilation failed, falling back on Python.
+brian.experimental.codegen.stateupdaters: WARNING  C compilation failed, falling back on Python.
+Traceback (most recent call last):
+  File "Diehl&Cook_spiking_MNIST.py", line 455, in <module>
+    b.run(single_example_time, report='text')
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/brian/network.py", line 938, in run
+    report=report, report_period=report_period)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/brian/network.py", line 574, in run
+    self.update()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/brian/network.py", line 518, in update
+    f()
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/brian/neurongroup.py", line 501, in update
+    spikes = self._threshold(self) # get spikes
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/brian/threshold.py", line 186, in __call__
+    extra_compile_args=self._extra_compile_args)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/weave/inline_tools.py", line 370, in inline
+    **kw)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/weave/inline_tools.py", line 500, in compile_function
+    verbose=verbose, **kw)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/weave/ext_tools.py", line 373, in compile
+    verbose=verbose, **kw)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/weave/build_tools.py", line 242, in build_extension
+    compiler_dir = platform_info.get_compiler_dir(compiler_name)
+  File "/home/ubuntu/.local/lib/python2.7/site-packages/weave/platform_info.py", line 125, in get_compiler_dir
+    raise ValueError("The '%s' compiler was not found." % compiler_name)
+ValueError: The 'gcc' compiler was not found.
+```
+
