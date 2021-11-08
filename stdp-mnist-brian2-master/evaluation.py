@@ -10,7 +10,7 @@ import matplotlib.cm as cmap
 import time
 import os.path
 import scipy 
-import cPickle as pickle
+import pickle
 from struct import unpack
 from brian2 import *
 
