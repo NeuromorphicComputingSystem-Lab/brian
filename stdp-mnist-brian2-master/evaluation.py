@@ -80,8 +80,8 @@ def get_new_assignments(result_monitor, input_numbers):
 
 MNIST_data_path = './'
 data_path = './activity/'
-training_ending = '10000'
-testing_ending = '10000'
+training_ending = '10' ## 10000
+testing_ending = '10' ## 10000
 start_time_training = 0
 end_time_training = int(training_ending)
 start_time_testing = 0

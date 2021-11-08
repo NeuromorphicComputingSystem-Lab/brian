@@ -29,11 +29,11 @@ def get_labeled_data(picklename, bTrain = True):
     else:
         # Open the images with gzip in read binary mode
         if bTrain:
-            images = open(MNIST_data_path + 'train-images-idx3-ubyte','rb')
-            labels = open(MNIST_data_path + 'train-labels-idx1-ubyte','rb')
+            images = open(MNIST_data_path + 'train-images.idx3-ubyte','rb')
+            labels = open(MNIST_data_path + 'train-labels.idx1-ubyte','rb')
         else:
-            images = open(MNIST_data_path + 't10k-images-idx3-ubyte','rb')
-            labels = open(MNIST_data_path + 't10k-labels-idx1-ubyte','rb')
+            images = open(MNIST_data_path + 't10k-images.idx3-ubyte','rb')
+            labels = open(MNIST_data_path + 't10k-labels.idx1-ubyte','rb')
         # Get metadata for images
         images.read(4)  # skip the magic_number
         number_of_images = unpack('>I', images.read(4))[0]
@@ -105,9 +105,9 @@ test_mode = True
 np.random.seed(0)
 data_path = './'
 if test_mode:
-    num_examples = 10000
+    num_examples = 10 ## 10000
 else:
-    num_examples = 60000 * 3
+    num_examples = 60 * 3 ## 60000 * 3
 
 
 n_input = 784
