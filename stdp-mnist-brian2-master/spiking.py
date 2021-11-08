@@ -7,7 +7,7 @@ Created on 15.12.2014
 
 import numpy as np
 import os.path
-import pickle
+import _pickle as pickle
 import brian2 as b
 from struct import unpack
 from brian2 import *
@@ -15,7 +15,7 @@ from brian2 import *
 prefs.codegen.target = 'cython'
 
 # specify the location of the MNIST data
-MNIST_data_path = ''
+MNIST_data_path = './'
 
 #------------------------------------------------------------------------------
 # functions
@@ -70,7 +70,7 @@ def get_matrix_from_file(fileName, n_src, n_tgt):
 def save_connections():
     print( 'save connections')
     conn = connections['XeAe']
-    connListSparse = zip(conn.i, conn.j, conn.w)
+    connListSparse = np.array(zip(conn.i, conn.j, conn.w))
     np.save(data_path + 'weights/XeAe', connListSparse)
 
 def save_theta():
