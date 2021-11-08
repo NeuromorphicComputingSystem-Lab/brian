@@ -23,7 +23,7 @@ def get_labeled_data(picklename, bTrain = True):
        it as list of tuples.
     """
     if os.path.isfile('%s.pickle' % picklename):
-        data = pickle.load(open('%s.pickle' % picklename))
+        data = pickle.load(open('%s.pickle' % picklename, "rb"))
     else:
         # Open the images with gzip in read binary mode
         if bTrain:
