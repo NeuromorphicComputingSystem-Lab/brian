@@ -111,11 +111,11 @@ assignments = get_new_assignments(training_result_monitor[start_time_training:en
                                   training_input_numbers[start_time_training:end_time_training])
 print( assignments)
 counter = 0 
-num_tests = end_time_testing / 10000
+num_tests = end_time_testing // 10
 sum_accurracy = [0] * num_tests
 while (counter < num_tests):
-    end_time = min(end_time_testing, 10000*(counter+1))
-    start_time = 10000*counter
+    end_time = min(end_time_testing, 10*(counter+1))
+    start_time = 10*counter
     test_results = np.zeros((10, end_time-start_time))
     print( 'calculate accuracy for sum')
     for i in range(end_time - start_time):
